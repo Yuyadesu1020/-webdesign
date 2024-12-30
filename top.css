@@ -26,6 +26,7 @@ header div h3 {
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
+  mix-blend-mode: difference;
 }
 header nav {
   position: fixed;
@@ -45,8 +46,59 @@ header nav ul li {
 }
 
 footer {
-  margin-left: 63px;
-  margin-right: 63px;
+  margin-top: 80px;
+}
+footer .contact div {
+  text-align: center;
+}
+footer .contact div figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact div figure h2 {
+  box-sizing: content-box;
+  margin: 0;
+  font-size: 27px;
+}
+footer .contact div figure div {
+  width: 141px;
+}
+footer .contact div figure div img {
+  width: 100%;
+}
+footer .contact div img {
+  width: 800px;
+}
+footer .contact div .account {
+  margin-top: 50px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact div .account .mail {
+  display: inline-block;
+  border: solid 1px #1c1b1c;
+  border-radius: 30px;
+  padding: 17px 61px;
+  transition: all 0.3s ease-in-out;
+}
+footer .contact div .account .mail:hover {
+  color: #faf1f1;
+  background-color: #1c1b1c;
+}
+footer .contact div .account .icon {
+  font-size: 65px;
+  transition: scale 0.3s ease-in-out;
+}
+footer .contact div .account .icon:hover {
+  scale: 1.2;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 30px 0;
 }
 
 body {
@@ -72,7 +124,6 @@ h1 {
 }
 
 h2 {
-  width: 1000px;
   margin: 0 auto;
   padding: 36px 0;
   font-family: "Shippori Mincho", serif;
