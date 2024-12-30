@@ -154,6 +154,18 @@ a {
   align-items: center;
   gap: 70px;
 }
+#volleyball a:hover {
+  cursor: zoom-in;
+}
+#volleyball a .top_volley {
+  overflow: hidden;
+  width: 385px;
+  height: 300px;
+  background-image: url(../asset/img/volleyball_ball.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 #travel {
   width: 1000px;
@@ -165,18 +177,10 @@ a {
   justify-content: center;
   gap: 70px;
 }
-
-.top_volley {
-  overflow: hidden;
-  width: 385px;
-  height: 300px;
-  background-image: url(../asset/img/volleyball_ball.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#travel a:hover {
+  cursor: zoom-in;
 }
-
-.top_travel {
+#travel a .top_travel {
   overflow: hidden;
   width: 385px;
   height: 300px;
@@ -195,7 +199,17 @@ a {
   align-items: center;
   gap: 70px;
 }
-#profile .top_profile {
+#profile .profile_box .info a {
+  display: inline-block;
+  border: solid 1px #1c1b1c;
+  padding: 9px 50px;
+  transition: all 0.3s ease-in-out;
+}
+#profile .profile_box .info a:hover {
+  color: #faf1f1;
+  background-color: #1c1b1c;
+}
+#profile .profile_box .top_profile {
   overflow: hidden;
   width: 300px;
 }
@@ -215,16 +229,15 @@ a {
   flex-direction: row;
   margin: 0 auto;
 }
-#fashion .slide-wrapper {
+#fashion .slide-container .slide-wrapper {
   display: flex;
   flex-direction: row;
   animation: slide-flow 20s infinite linear 1s both;
 }
-#fashion .slide {
+#fashion .slide-container .slide-wrapper .slide {
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 1px solid #ddd;
   margin-right: 60px;
 }
 @keyframes slide-flow {

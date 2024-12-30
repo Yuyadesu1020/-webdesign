@@ -126,50 +126,66 @@ a {
   a {
     margin: 0 auto;
     @include middle_box();
+    &:hover{
+      cursor: zoom-in;
+    }
+    .top_volley {
+      overflow: hidden;
+      width: 385px;
+      height: 300px;
+      background-image: url(../asset/img/volleyball_ball.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
 
 #travel {
   width: 1000px;
   a {
-    
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 70px;
+    &:hover{
+      cursor: zoom-in;
+    }
+    .top_travel {
+      overflow: hidden;
+      width: 385px;
+      height: 300px;
+      background-image: url(../asset/img/travel_window.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
-}
-
-.top_volley {
-  overflow: hidden;
-  width: 385px;
-  height: 300px;
-  background-image: url(../asset/img/volleyball_ball.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.top_travel {
-  overflow: hidden;
-  width: 385px;
-  height: 300px;
-  background-image: url(../asset/img/travel_window.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #profile {
   width: 1000px;
   .profile_box {
     @include middle_box();
+    .info{
+      a{
+        display: inline-block;
+        border: solid 1px #1c1b1c;
+        padding: 9px 50px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          color: #faf1f1;
+          background-color: #1c1b1c;
+        }
+      }
+    }
+    .top_profile {
+      overflow: hidden;
+      width: 300px;
+    }
   }
-  .top_profile {
-    overflow: hidden;
-    width: 300px;
-  }
+  
 }
 
 
@@ -187,24 +203,23 @@ a {
     overflow: hidden;
     flex-direction: row;
     margin: 0 auto;
-  }
-  .slide-wrapper {
-    display: flex;
-    flex-direction: row;
-    animation: slide-flow 20s infinite linear 1s both;
-  }
-  .slide {
-    width: 300px;
-    object-fit: cover;
-    border: 1px solid #ddd;
-    margin-right: 60px;
-  }
-  @keyframes slide-flow {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
+    .slide-wrapper {
+      display: flex;
+      flex-direction: row;
+      animation: slide-flow 20s infinite linear 1s both;
+      .slide {
+        width: 300px;
+        object-fit: cover;
+        margin-right: 60px;
+      }
+      @keyframes slide-flow {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
     }
   }
 }
