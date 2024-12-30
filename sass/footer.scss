@@ -1,25 +1,40 @@
 footer {
   margin-top: 80px;
-  .scroll{
-    opacity: 0;
+  .pagetop {
+    border-radius: 80%;
+    background-color: rgba(#3ae3c2, 0.5);
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 86px;
+    right: 7%;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+  }
+  .scroll {
+    opacity: 1;
+    // position: fixed;
+    // bottom: 86px;
+    // right: 7%;
     transition: all 0.5s ease;
-    &:hover{
-        transform: scale(1.1);
-        background-color: #faf1f1;
+    &:hover {
+      transform: scale(1.1);
+      background-color: #faf1f1;
     }
-    &:active{
-        transform: translateY(20px);
+    &:active {
+      transform: translateY(20px);
     }
-    &.visible{
-        opacity: 1;
+    &.visible {
+      opacity: 1;
     }
-    .go-top{
-        font-size: 35px;
-        color: black;
-        padding-left: 24px;
-        line-height: 70px;
+    .go-top {
+      font-size: 50px;
+      color: black;
+      padding-left: 10px;
+      line-height: 70px;
     }
-}
+  }
 
   .contact {
     div {

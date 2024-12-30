@@ -53,6 +53,38 @@ header nav ul a:hover {
 footer {
   margin-top: 80px;
 }
+footer .pagetop {
+  border-radius: 80%;
+  background-color: rgba(58, 227, 194, 0.5);
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 86px;
+  right: 7%;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+}
+footer .scroll {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+footer .scroll:hover {
+  transform: scale(1.1);
+  background-color: #faf1f1;
+}
+footer .scroll:active {
+  transform: translateY(20px);
+}
+footer .scroll.visible {
+  opacity: 1;
+}
+footer .scroll .go-top {
+  font-size: 50px;
+  color: black;
+  padding-left: 10px;
+  line-height: 70px;
+}
 footer .contact div {
   text-align: center;
 }
@@ -162,7 +194,7 @@ a {
 #hero {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 0;
   padding: 0;

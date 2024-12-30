@@ -51,7 +51,7 @@ h2 {
 }
 
 p {
-  font-size: $normal;
+  font-size: var.$normal;
   line-height: 2.3rem;
   width: 500px;
   text-align: justify;
@@ -61,7 +61,7 @@ p {
 }
 
 a {
-  font-size: $normal;
+  font-size: var.$normal;
   text-decoration: none;
   color: #1c1b1c;
   font-family: "Shippori Mincho", serif;
@@ -73,7 +73,7 @@ a {
 #hero {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   gap: 0;
   padding: 0;
@@ -84,7 +84,7 @@ a {
       flex-direction: column;
       text-align: left;
       h1{
-        font-size: $title;
+        font-size: var.$title;
       }
       p{
         position: relative;
@@ -120,7 +120,7 @@ a {
   width: 1000px;
   a {
     margin: 0 auto;
-    @include middle_box();
+    @include mixin.middle_box();
     &:hover{
       cursor: zoom-in;
     }
@@ -194,7 +194,7 @@ a {
 #profile {
   width: 1000px;
   .profile_box {
-    @include middle_box();
+    @include mixin.middle_box();
     .info{
       a{
         display: inline-block;
@@ -217,7 +217,7 @@ a {
 
 #fashion {
   width: 100%;
-  background-color: $accent_color;
+  background-color: var.$accent_color;
   h2 {
     text-align: center;
   }
