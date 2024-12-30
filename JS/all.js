@@ -16,15 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//一定スクロールすると、表示
-window.addEventListener('scroll', function() {
-    var fixedHeader = document.getElementById('fixed-header');
-    var scrollPosition = window.scrollY || window.pageYOffset;
-    var triggerHeight = 400; // トリガーとなるスクロールの高さ（例として200px）
+// スクロールすると、pagetopボタンのフェードイン、フェードアウト
+document.addEventListener("DOMContentLoaded", function(){
+    // 変数名scrollButtonにclass名(.scroll)を一致させる↓
+    var scrollButton = document.querySelector('.scroll');
 
-    if (scrollPosition > triggerHeight) {
-        fixedHeader.classList.add('active');
-    } else {
-        fixedHeader.classList.remove('active');
-    }
+    //スクロールイベントを投入
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            //スクロール量が指定より以上場合、visibleクラスを追加
+            scrollButton.classList.add('visible');
+        } else {
+            //スクロール量が指定より以下だった場合、visibleクラスを削除
+            scrollButton.classList.remove('visible');
+        }
+    });
 });
