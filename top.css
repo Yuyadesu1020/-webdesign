@@ -26,7 +26,6 @@ header div h3 {
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
-  mix-blend-mode: difference;
 }
 header nav {
   position: fixed;
@@ -43,6 +42,12 @@ header nav ul li {
   font-size: 18px;
   line-height: 1.8em;
   writing-mode: vertical-rl;
+}
+header nav ul a {
+  transition: all 0.3s ease-in-out;
+}
+header nav ul a:hover {
+  color: #a0a0a0;
 }
 
 footer {
@@ -212,10 +217,22 @@ a {
   overflow: hidden;
   width: 385px;
   height: 300px;
-  background-image: url(../asset/img/volleyball_ball.png);
+}
+#volleyball a .banner {
+  overflow: hidden;
+  position: relative;
+}
+#volleyball a .banner:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../asset/img/volleyball_ball.png") no-repeat center center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  transition: transform 0.8s ease;
+}
+#volleyball a .banner:hover:after {
+  transform: scale(1.1);
 }
 
 #travel {
@@ -239,6 +256,22 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+#travel a .banner2 {
+  overflow: hidden;
+  position: relative;
+}
+#travel a .banner2:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../asset/img/travel_window.png") no-repeat center center;
+  background-size: cover;
+  transition: transform 0.8s ease;
+}
+#travel a .banner2:hover:after {
+  transform: scale(1.1);
 }
 
 #profile {

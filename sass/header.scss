@@ -37,6 +37,12 @@ header {
         line-height: 1.8em;
         writing-mode: vertical-rl;
       }
+      a{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          color: #a0a0a0;
+        }
+      }
     }
   }
 }

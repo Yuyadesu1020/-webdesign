@@ -36,4 +36,10 @@ header nav ul li {
   font-size: 18px;
   line-height: 1.8em;
   writing-mode: vertical-rl;
+}
+header nav ul a {
+  transition: all 0.3s ease-in-out;
+}
+header nav ul a:hover {
+  color: #a0a0a0;
 }/*# sourceMappingURL=header.css.map */
