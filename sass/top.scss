@@ -15,17 +15,13 @@
 @use "main";
 @use "footer";
 
-@mixin middle_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  //@incudeとセットで
-}
-
 //全セレクタ
 body {
+  -webkit-text-size-adjust: 100%;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   color: #1c1b1c;
   background-color: #faf1f1;
 }
@@ -47,7 +43,6 @@ h1{
 }
 
 h2 {
-  // width: 1000px;
   margin: 0 auto;
   padding: 36px 0;
   font-family: "Shippori Mincho", serif;
@@ -56,7 +51,7 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: $normal;
   line-height: 2.3rem;
   width: 500px;
   text-align: justify;
@@ -66,7 +61,7 @@ p {
 }
 
 a {
-  font-size: 18px;
+  font-size: $normal;
   text-decoration: none;
   color: #1c1b1c;
   font-family: "Shippori Mincho", serif;
@@ -89,7 +84,7 @@ a {
       flex-direction: column;
       text-align: left;
       h1{
-        font-size: 41px;
+        font-size: $title;
       }
       p{
         position: relative;
@@ -220,11 +215,9 @@ a {
   
 }
 
-
-
 #fashion {
   width: 100%;
-  background-color: #A68181;
+  background-color: $accent_color;
   h2 {
     text-align: center;
   }

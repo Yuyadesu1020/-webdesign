@@ -3,3 +3,11 @@
 @mixin h1 {
   font-size: var.$title;
 }
+
+@mixin middle_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    //@incudeとセットで
+  }

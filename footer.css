@@ -1,6 +1,26 @@
 footer {
   margin-top: 80px;
 }
+footer .scroll {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+footer .scroll:hover {
+  transform: scale(1.1);
+  background-color: #faf1f1;
+}
+footer .scroll:active {
+  transform: translateY(20px);
+}
+footer .scroll.visible {
+  opacity: 1;
+}
+footer .scroll .go-top {
+  font-size: 35px;
+  color: black;
+  padding-left: 24px;
+  line-height: 70px;
+}
 footer .contact div {
   text-align: center;
 }

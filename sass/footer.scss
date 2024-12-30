@@ -1,7 +1,26 @@
 footer {
-  //   margin-left: 63px;
-  //   margin-right: 63px;
   margin-top: 80px;
+  .scroll{
+    opacity: 0;
+    transition: all 0.5s ease;
+    &:hover{
+        transform: scale(1.1);
+        background-color: #faf1f1;
+    }
+    &:active{
+        transform: translateY(20px);
+    }
+    &.visible{
+        opacity: 1;
+    }
+    .go-top{
+        font-size: 35px;
+        color: black;
+        padding-left: 24px;
+        line-height: 70px;
+    }
+}
+
   .contact {
     div {
       text-align: center;
