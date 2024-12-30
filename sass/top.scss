@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+// 変数、mixinは as 変数名を入力する
+// その後は入れる場所にて変数名.varもしくはmixin名を入れる
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+@use "var";
+@use "mixin" as mixin;
+//変数名がファイル名と異なる場合はas~必要だが、同じ場合は要らない
+
+@use "header";
+@use "main";
+@use "footer";
+
+@mixin middle_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  //@incudeとセットで
+}
+
+//全セレクタ
+body {
+  margin: 0;
+  color: #1c1b1c;
+  background-color: #faf1f1;
+}
+
+section {
+  width: 900px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+h1{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 36px 0;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 2.3rem;
+  width: 500px;
+  text-align: justify;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #1c1b1c;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//各セクションセレクタ
+#hero {
+  @include middle_box();
+  gap: 30px;
+  width: 850px;
+  padding: 200px 0 0 0;
+  div {
+    width: 446px;
+    img {
+      width: 139%;
+      height: 85vh;
+    }
+  }
+}
+
+#volleyball {
+  width: 1000px;
+  a {
+    
+    margin: 0 auto;
+    @include middle_box();
+  }
+}
+
+#travel {
+  width: 1000px;
+  a {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+}
+
+.top_volley {
+  overflow: hidden;
+  width: 385px;
+  height: 300px;
+  background-image: url(../asset/img/volleyball_ball.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top_travel {
+  overflow: hidden;
+  width: 385px;
+  height: 300px;
+  background-image: url(../asset/img/travel_window.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#profile {
+  width: 1000px;
+  .profile_box {
+    @include middle_box();
+  }
+  .top_profile {
+    overflow: hidden;
+    width: 300px;
+  }
+}
+
+
+
+#fashion {
+  width: 100%;
+  background-color: #A68181;
+  h2 {
+    text-align: center;
+  }
+  .slide-container {
+    display: flex;
+    align-items: center;
+    height: 340px;
+    overflow: hidden;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .slide-wrapper {
+    display: flex;
+    flex-direction: row;
+    animation: slide-flow 20s infinite linear 1s both;
+  }
+  .slide {
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-right: 60px;
+  }
+  @keyframes slide-flow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+

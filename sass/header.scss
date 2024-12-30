@@ -1,0 +1,42 @@
+header {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      img {
+        display: inline-block;
+        width: 213px;
+        height: 193px;
+      }
+    }
+    h3{
+      font-family: "Yuji Boku", serif;
+      font-weight: 400;
+      font-size: 30px;
+      font-style: normal;
+    }
+  }
+
+  nav {
+    position: fixed;
+    bottom: 3.5rem;
+    left: 2.5rem;
+    z-index: 10;
+    color: #1c1b1c;
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 10px;
+      li {
+        font-size: 18px;
+        line-height: 1.8em;
+        writing-mode: vertical-rl;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@use "var" as var;
+
+@mixin h1 {
+  font-size: var.$title;
+}
