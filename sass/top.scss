@@ -76,15 +76,47 @@ a {
 
 //各セクションセレクタ
 #hero {
-  @include middle_box();
-  gap: 30px;
-  width: 850px;
-  padding: 200px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  .catchphrase{
+    div{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      h1{
+        font-size: 41px;
+      }
+      p{
+        position: relative;
+        line-height: 1.8em;
+        padding-left: 6.895833333333332vw;
+        padding-bottom: 1.5625vw;
+        padding-top: 0.5208333333333333vw;
+        &::before{
+          content: "";
+          width: 4.6875vw;
+          position: absolute;
+          border: solid 0.8px #1c1b1c;
+          opacity: 0.8;
+          top: 1.5vw;
+          left: 0.6458333333333335vw;
+        }
+      }
+    }
+    
+  }
   div {
-    width: 446px;
+    position: relative;
     img {
-      width: 139%;
-      height: 75vh;
+      width: 100%;
+      height: 102svh;
+      object-fit: cover;
+      object-position: 100% 0%;
     }
   }
 }
@@ -92,7 +124,6 @@ a {
 #volleyball {
   width: 1000px;
   a {
-    
     margin: 0 auto;
     @include middle_box();
   }

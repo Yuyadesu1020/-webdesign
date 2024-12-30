@@ -9,6 +9,7 @@ header {
   top: 15px;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 header div {
   display: flex;
@@ -30,7 +31,6 @@ header nav {
   position: fixed;
   bottom: 3.5rem;
   left: 2.5rem;
-  z-index: 10;
   color: #1c1b1c;
 }
 header nav ul {
@@ -100,20 +100,48 @@ a {
 }
 
 #hero {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  gap: 70px;
-  gap: 30px;
-  width: 850px;
-  padding: 200px 0 0 0;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+#hero .catchphrase div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#hero .catchphrase div h1 {
+  font-size: 41px;
+}
+#hero .catchphrase div p {
+  position: relative;
+  line-height: 1.8em;
+  padding-left: 6.8958333333vw;
+  padding-bottom: 1.5625vw;
+  padding-top: 0.5208333333vw;
+}
+#hero .catchphrase div p::before {
+  content: "";
+  width: 4.6875vw;
+  position: absolute;
+  border: solid 0.8px #1c1b1c;
+  opacity: 0.8;
+  top: 1.5vw;
+  left: 0.6458333333vw;
 }
 #hero div {
-  width: 446px;
+  position: relative;
 }
 #hero div img {
-  width: 139%;
-  height: 75vh;
+  width: 100%;
+  height: 102svh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0%;
+     object-position: 100% 0%;
 }
 
 #volleyball {
