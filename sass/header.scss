@@ -38,6 +38,9 @@ header {
         writing-mode: vertical-rl;
       }
       a{
+        background-color: rgba(250, 241, 241, 0.6);
+        border-radius: 6px;
+        padding: 4px 2px;
         transition: all 0.3s ease-in-out;
         &:hover{
           color: #a0a0a0;

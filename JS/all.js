@@ -32,3 +32,19 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 });
+
+//スライドショー/矢印移動
+$(document).ready(function () {
+    $('.slider').slick({
+      autoplay: true, // 自動再生
+      infinite: true, // 無限ループ
+      speed: 400, // スライドのスピード
+      slidesToShow: 3, // 表示するスライド数
+      slidesToScroll: 1, // スクロールするスライド数
+      prevArrow: '<div class="slick-prev"></div>', // 左矢印
+      nextArrow: '<div class="slick-next"></div>', // 右矢印
+      centerMode: true, // 中央揃え
+      variableWidth: true, // 画像の幅を可変に
+      dots: true, // ドットナビゲーション
+    });
+  });

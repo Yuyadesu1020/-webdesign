@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+// 変数、mixinは as 変数名を入力する
+// その後は入れる場所にて変数名.varもしくはmixin名を入れる
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+@use "var";
+@use "mixin" as mixin;
+//変数名がファイル名と異なる場合はas~必要だが、同じ場合は要らない
+
+@use "header";
+@use "main";
+@use "volley";
+@use "footer";
+
+@include mixin.all;
+@include mixin.zoomimg;
+
+h1 {
+  font-size: 30px;
+}
+
+#hero{
+    .topicpath {
+        padding-top: 197px;
+      }
+    padding-top: 0;
+    div{
+        @include mixin.middle_box;
+        .heroimg{
+            width: 1000px;
+            height: 60svh;
+            object-fit: cover;
+            margin-top: 50px;
+        }
+    }
+}
+
+#sub_hero{
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    div{
+        text-align: right;
+        .sub1{
+            width: 220px;
+            height: 100%;
+            object-fit: cover;
+            object-position: 95% 50%;
+        }
+
+        .sub2{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+}
+
+#descript2{
+    padding-top: 90px;
+    .phase1, .phase2{
+        padding-top: 40px;
+    }
+    .phase3{
+        padding-top: 80px;
+        p{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .slide-hero {
+            width: 100%;
+            margin: 40px auto;
+          
+            .slider {
+                padding: 0 20px;
+              img {
+                width: 450px;
+                height: 350px;
+              }
+            }
+          
+            .slick-slide {
+              transform: scale(0.8);
+              transition: all 0.5s;
+              opacity: 0.5;
+          
+              &.slick-center {
+                transform: scale(1);
+                opacity: 1;
+              }
+            }
+          
+            .slick-prev,
+            .slick-next {
+              position: absolute;
+              top: 42%;
+              cursor: pointer;
+              outline: none;
+              border-top: 2px solid #666;
+              border-right: 2px solid #666;
+              height: 15px;
+              width: 15px;
+          
+              &.slick-prev {
+                left: -1.5%;
+                transform: rotate(-135deg);
+              }
+          
+              &.slick-next {
+                right: -1.5%;
+                transform: rotate(45deg);
+              }
+            }
+          
+              li {
+                display: inline-block;
+                margin: 0 5px;
+          
+                button {
+                  color: transparent;
+                  outline: none;
+                  width: 5px;
+                  height: 12px;
+                  display: block;
+                  border-radius: 50%;
+                  background: #ccc;
+          
+                  &:hover {
+                    background: #999; // ホバー時の色変更（例）
+                  }
+                }
+          
+                &.slick-active {
+                  button {
+                    background: #4e4e4e;
+                  }
+                }
+              }
+            }
+          }
+}

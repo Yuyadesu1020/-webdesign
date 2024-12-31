@@ -44,6 +44,9 @@ header nav ul li {
   writing-mode: vertical-rl;
 }
 header nav ul a {
+  background-color: rgba(250, 241, 241, 0.6);
+  border-radius: 6px;
+  padding: 4px 2px;
   transition: all 0.3s ease-in-out;
 }
 header nav ul a:hover {
@@ -236,7 +239,7 @@ h1 {
 
 #hero .topicpath {
   margin: 0 auto;
-  padding-top: 260px;
+  padding-top: 197px;
   justify-content: left;
   gap: 15px;
 }
@@ -263,10 +266,11 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 70px;
+  padding-top: 40px;
 }
 #descript2 .phase1 img, #descript2 .phase2 img {
   width: 450px;
-  height: 300px;
+  height: 100%;
 }
 #descript2 .phase2 {
   flex-direction: row-reverse;

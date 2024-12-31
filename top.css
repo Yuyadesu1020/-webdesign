@@ -44,6 +44,9 @@ header nav ul li {
   writing-mode: vertical-rl;
 }
 header nav ul a {
+  background-color: rgba(250, 241, 241, 0.6);
+  border-radius: 6px;
+  padding: 4px 2px;
   transition: all 0.3s ease-in-out;
 }
 header nav ul a:hover {
