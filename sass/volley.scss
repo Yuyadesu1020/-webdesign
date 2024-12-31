@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+// 変数、mixinは as 変数名を入力する
+// その後は入れる場所にて変数名.varもしくはmixin名を入れる
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+@use "var";
+@use "mixin" as mixin;
+//変数名がファイル名と異なる場合はas~必要だが、同じ場合は要らない
+
+@use "header";
+@use "main";
+@use "footer";
+
+//全セレクタ
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #1c1b1c;
+  background-color: #faf1f1;
+}
+
+section {
+  width: 900px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 36px 0;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+
+p {
+  font-size: var.$normal;
+  line-height: 2.3rem;
+  width: 500px;
+  text-align: justify;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-size: var.$normal;
+  text-decoration: none;
+  color: #1c1b1c;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
