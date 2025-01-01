@@ -133,3 +133,24 @@ h1 {
             }
           }
 }
+
+#banner{
+    width: 1000px;
+    padding-bottom: 0;
+    div{
+        a{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 60%;
+                transition: all 0.3s ease;
+                &:hover{
+                    scale: 1.1;
+                }
+                &:active{
+                    transform: translateY(30px);
+                }
+            }
+        }
+    }
+}

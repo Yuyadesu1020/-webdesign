@@ -492,4 +492,23 @@ h1 {
 }
 #descript2 .phase3 .slide-hero li.slick-active button {
   background: #4e4e4e;
+}
+
+#banner {
+  width: 1000px;
+  padding-bottom: 0;
+}
+#banner div a {
+  display: flex;
+  justify-content: center;
+}
+#banner div a img {
+  width: 60%;
+  transition: all 0.3s ease;
+}
+#banner div a img:hover {
+  scale: 1.1;
+}
+#banner div a img:active {
+  transform: translateY(30px);
 }/*# sourceMappingURL=travel.css.map */
