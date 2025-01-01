@@ -209,6 +209,331 @@ a {
   font-style: normal;
 }
 
+#hero {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+#hero .catchphrase div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#hero .catchphrase div h1 {
+  font-size: 41px;
+}
+#hero .catchphrase div p {
+  position: relative;
+  line-height: 1.8em;
+  padding-left: 6.8958333333vw;
+  padding-bottom: 1.5625vw;
+  padding-top: 0.5208333333vw;
+}
+#hero .catchphrase div p::before {
+  content: "";
+  width: 4.6875vw;
+  position: absolute;
+  border: solid 0.8px #1c1b1c;
+  opacity: 0.8;
+  top: 1.5vw;
+  left: 0.6458333333vw;
+}
+#hero div {
+  position: relative;
+}
+#hero div img {
+  width: 100%;
+  height: 102svh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0%;
+     object-position: 100% 0%;
+}
+#hero div .scrolldown2 {
+  /* 描画位置 ※位置は適宜調整してください */
+  position: absolute;
+  /* top: -50px; */
+  bottom: 87px;
+  right: 12%;
+  /* 丸の描写 */
+  /* 線の描写 */
+  /* 下からの距離が変化して丸の全体が上から下に動く */
+  /* 上から下にかけて丸が透過 → 不透明 → 透過する */
+}
+#hero div .scrolldown2 span {
+  /* 描画位置 */
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  /* テキストの形状 */
+  color: #1c1b1c;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /* 縦書き設定 */
+  writing-mode: vertical-rl;
+}
+#hero div .scrolldown2::before {
+  content: "";
+  /* 描画位置 */
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  /* 丸の形状 */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1c1b1c;
+  /* 丸の動き 1.6秒かけて透過し、永遠にループ */
+  animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
+}
+#hero div .scrolldown2::after {
+  content: "";
+  /* 描画位置 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* 線の形状 */
+  width: 2px;
+  height: 80px;
+  background: #1c1b1c;
+}
+@keyframes circlemove {
+  0% {
+    bottom: 70px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#volleyball {
+  width: 1000px;
+}
+#volleyball a {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 53px;
+}
+#volleyball a:hover {
+  cursor: zoom-in;
+}
+#volleyball a .top_volley {
+  overflow: hidden;
+  width: 385px;
+  height: 300px;
+}
+#volleyball a .banner, #volleyball a .zoom-contents .banner2, .zoom-contents #volleyball a .banner2, #volleyball a .zoom-contents .banner3, .zoom-contents #volleyball a .banner3 {
+  overflow: hidden;
+  position: relative;
+}
+#volleyball a .banner:after, #volleyball a .zoom-contents .banner2:after, .zoom-contents #volleyball a .banner2:after, #volleyball a .zoom-contents .banner3:after, .zoom-contents #volleyball a .banner3:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../asset/img/volleyball.png") no-repeat center center;
+  background-size: cover;
+  transition: transform 0.8s ease;
+}
+#volleyball a .banner:hover:after, #volleyball a .zoom-contents .banner2:hover:after, .zoom-contents #volleyball a .banner2:hover:after, #volleyball a .zoom-contents .banner3:hover:after, .zoom-contents #volleyball a .banner3:hover:after {
+  transform: scale(1.1);
+}
+
+#travel {
+  width: 1000px;
+}
+#travel a {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+#travel a:hover {
+  cursor: zoom-in;
+}
+#travel a .top_travel {
+  overflow: hidden;
+  width: 385px;
+  height: 300px;
+  background-image: url(../asset/img/travel_window.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#travel a .banner2 {
+  overflow: hidden;
+  position: relative;
+}
+#travel a .banner2:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../asset/img/window.png") no-repeat center center;
+  background-size: cover;
+  transition: transform 0.8s ease;
+}
+#travel a .banner2:hover:after {
+  transform: scale(1.1);
+}
+
+#profile {
+  width: 1000px;
+}
+#profile .profile_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 53px;
+}
+#profile .profile_box h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.4rem;
+}
+#profile .profile_box .info a {
+  display: inline-block;
+  border: solid 1px #1c1b1c;
+  padding: 9px 50px;
+  transition: all 0.3s ease-in-out;
+}
+#profile .profile_box .info a:hover {
+  color: #faf1f1;
+  background-color: #1c1b1c;
+}
+#profile .profile_box .top_profile {
+  overflow: hidden;
+  width: 300px;
+}
+
+#fashion {
+  width: 100%;
+  background-color: #A68181;
+}
+#fashion h2 {
+  text-align: center;
+}
+#fashion h2 a {
+  font-size: 30px;
+}
+#fashion .slide-container {
+  display: flex;
+  align-items: center;
+  height: 340px;
+  overflow: hidden;
+  flex-direction: row;
+  margin: 0 auto;
+}
+#fashion .slide-container .slide-wrapper {
+  display: flex;
+  flex-direction: row;
+  animation: slide-flow 20s infinite linear 1s both;
+}
+#fashion .slide-container .slide-wrapper .slide {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 60px;
+}
+@keyframes slide-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #1c1b1c;
+  background-color: #faf1f1;
+}
+
+section {
+  width: 1000px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 36px 0;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 2.3rem;
+  width: 500px;
+  text-align: justify;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #1c1b1c;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .zoom-contents {
   display: flex;
   flex-direction: row;
@@ -276,7 +601,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 53px;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 #descript2 .phase1 img, #descript2 .phase2 img {
   width: 450px;
@@ -385,4 +710,36 @@ a {
 
 h1 {
   font-size: 30px;
+}
+
+#profile .profile_box div h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 14px;
+}
+#profile .profile_box div h3:before {
+  content: "Yuya Kamachi";
+  letter-spacing: 0.19em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.top_profile {
+  overflow: hidden;
+  width: 300px;
+}
+
+#descript2 .phase3, #descript2 .phase4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 53px;
+  padding-top: 60px;
+}
+#descript2 .phase3 img, #descript2 .phase4 img {
+  width: 450px;
+  height: 100%;
+}
+#descript2 .phase4 {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=profile.css.map */
