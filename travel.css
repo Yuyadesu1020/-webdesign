@@ -257,7 +257,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
 }
 #hero div .heroimg {
   height: 500px;
@@ -275,7 +275,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
   padding-top: 40px;
 }
 #descript2 .phase1 img, #descript2 .phase2 img {
@@ -397,7 +397,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
 }
 #hero div .heroimg {
   width: 1000px;
@@ -464,26 +464,12 @@ h1 {
   transform: scale(1);
   opacity: 1;
 }
-#descript2 .phase3 .slide-hero .slick-prev,
-#descript2 .phase3 .slide-hero .slick-next {
-  position: absolute;
-  top: 42%;
-  cursor: pointer;
-  outline: none;
-  border-top: 2px solid #666;
-  border-right: 2px solid #666;
-  height: 15px;
-  width: 15px;
+#descript2 .phase3 .slide-hero .slick-prev:before,
+#descript2 .phase3 .slide-hero .slick-next:before {
+  color: #4e4e4e;
 }
-#descript2 .phase3 .slide-hero .slick-prev.slick-prev,
-#descript2 .phase3 .slide-hero .slick-next.slick-prev {
-  left: -1.5%;
-  transform: rotate(-135deg);
-}
-#descript2 .phase3 .slide-hero .slick-prev.slick-next,
-#descript2 .phase3 .slide-hero .slick-next.slick-next {
-  right: -1.5%;
-  transform: rotate(45deg);
+#descript2 .phase3 .slide-hero .slick-dots {
+  bottom: -34px;
 }
 #descript2 .phase3 .slide-hero li {
   display: inline-block;
@@ -497,6 +483,9 @@ h1 {
   display: block;
   border-radius: 50%;
   background: #ccc;
+}
+#descript2 .phase3 .slide-hero li button:before {
+  display: none;
 }
 #descript2 .phase3 .slide-hero li button:hover {
   background: #999;

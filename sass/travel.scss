@@ -95,29 +95,14 @@ h1 {
                 opacity: 1;
               }
             }
-          
-            .slick-prev,
-            .slick-next {
-              position: absolute;
-              top: 42%;
-              cursor: pointer;
-              outline: none;
-              border-top: 2px solid #666;
-              border-right: 2px solid #666;
-              height: 15px;
-              width: 15px;
-          
-              &.slick-prev {
-                left: -1.5%;
-                transform: rotate(-135deg);
-              }
-          
-              &.slick-next {
-                right: -1.5%;
-                transform: rotate(45deg);
-              }
-            }
-          
+                .slick-prev:before,
+                .slick-next:before{
+                    color: #4e4e4e;
+                }
+                .slick-dots {
+                    bottom: -34px;
+                }
+
               li {
                 display: inline-block;
                 margin: 0 5px;
@@ -130,6 +115,9 @@ h1 {
                   display: block;
                   border-radius: 50%;
                   background: #ccc;
+                &:before {
+                    display: none;
+                }
           
                   &:hover {
                     background: #999; // ホバー時の色変更（例）

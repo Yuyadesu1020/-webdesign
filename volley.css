@@ -247,7 +247,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
 }
 #hero div .heroimg {
   height: 500px;
@@ -265,7 +265,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
   padding-top: 40px;
 }
 #descript2 .phase1 img, #descript2 .phase2 img {

@@ -322,7 +322,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
 }
 #volleyball a:hover {
   cursor: zoom-in;
@@ -395,7 +395,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 53px;
 }
 #profile .profile_box h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
