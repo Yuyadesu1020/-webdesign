@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// 変数、mixinは as 変数名を入力する
+// その後は入れる場所にて変数名.varもしくはmixin名を入れる
+/* 
+    例)p{
+         font-size: var.$title;
+       }  
+*/
+@use "var";
+@use "mixin" as mixin;
+//変数名がファイル名と異なる場合はas~必要だが、同じ場合は要らない
+
+@use "header";
+@use "main";
+@use "volley";
+@use "footer";
+
+@include mixin.all;
+@include mixin.zoomimg;
+
+h1 {
+  font-size: 30px;
+}
+
