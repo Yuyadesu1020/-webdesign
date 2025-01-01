@@ -5,16 +5,16 @@
 }
 
 @mixin middle_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 53px;
-    //@incudeとセットで
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 53px;
+  //@incudeとセットで
+}
 
-@mixin all{
-        //全セレクタ
-    body {
+@mixin all {
+  //全セレクタ
+  body {
     -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
@@ -22,34 +22,34 @@
     height: 100%;
     color: #1c1b1c;
     background-color: #faf1f1;
-    }
+  }
 
-    section {
+  section {
     width: 1000px;
     padding: 40px 0;
     margin: 0 auto;
-    }
+  }
 
-    img {
+  img {
     width: 100%;
-    }
+  }
 
-    h1 {
+  h1 {
     font-family: "Shippori Mincho", serif;
     font-weight: 900;
     font-style: normal;
-    }
+  }
 
-    h2 {
+  h2 {
     margin: 0 auto;
     padding: 36px 0;
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-size: 30px;
     font-style: normal;
-    }
+  }
 
-    p {
+  p {
     font-size: var.$normal;
     line-height: 2.3rem;
     width: 500px;
@@ -57,57 +57,57 @@
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-style: normal;
-    }
+  }
 
-    a {
+  a {
     font-size: var.$normal;
     text-decoration: none;
     color: #1c1b1c;
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-style: normal;
-    }
+  }
 }
 
-@mixin zoomimg{
-    .zoom-contents {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        .banner {
-            overflow: hidden;
-            position: relative;
-            width: 500px;
-            height: 350px;
-            &:after {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 100%;
-                background: url('../asset/img/volleyimg③.png') no-repeat center center;
-                background-size: cover;
-                transition: transform .8s ease;
-            }
+@mixin zoomimg {
+  .zoom-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    .banner {
+      overflow: hidden;
+      position: relative;
+      width: 500px;
+      height: 350px;
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../asset/img/volleyimg③.png") no-repeat center center;
+        background-size: cover;
+        transition: transform 0.8s ease;
+      }
 
-            &:hover:after {
-                transform: scale(1.1);
-            }
-        }
-        .banner2{
-            @extend .banner;
-            &:after {
-                background: url('../asset/img/volleyimg④.png') no-repeat center center;
-                background-size: cover;
-            }
-        }
-        .banner3{
-            @extend .banner;
-            &:after {
-                background: url('../asset/img/volleyimg⑤.png') no-repeat center center;
-                background-size: cover;
-            }
-        }
+      &:hover:after {
+        transform: scale(1.1);
+      }
     }
+    .banner2 {
+      @extend .banner;
+      &:after {
+        background: url("../asset/img/volleyimg④.png") no-repeat center center;
+        background-size: cover;
+      }
+    }
+    .banner3 {
+      @extend .banner;
+      &:after {
+        background: url("../asset/img/volleyimg⑤.png") no-repeat center center;
+        background-size: cover;
+      }
+    }
+  }
 }
