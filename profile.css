@@ -612,7 +612,9 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../asset/img/volleyball.png") no-repeat center center;
+  background: url("../img/volleyball.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.8s ease;
 }
@@ -647,10 +649,6 @@ a {
   overflow: hidden;
   width: 385px;
   height: 300px;
-  background-image: url(../asset/img/airplane.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1010px) {
   #travel a .top_travel {
@@ -673,7 +671,9 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../asset/img/window.png") no-repeat center center;
+  background: url("../img/airplane.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   transition: transform 0.8s ease;
 }
@@ -894,7 +894,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../asset/img/volleyimg③.png") no-repeat center center;
+  background: url("../img/volleyimg③.png") no-repeat center center;
   background-size: cover;
   transition: transform 0.8s ease;
 }
@@ -902,11 +902,11 @@ a {
   transform: scale(1.1);
 }
 .zoom-contents .banner2:after {
-  background: url("../asset/img/volleyimg④.png") no-repeat center center;
+  background: url("../img/volleyimg④.png") no-repeat center center;
   background-size: cover;
 }
 .zoom-contents .banner3:after {
-  background: url("../asset/img/volleyimg⑤.png") no-repeat center center;
+  background: url("../img/volleyimg⑤.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1064,7 +1064,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../asset/img/volleyimg③.png") no-repeat center center;
+  background: url("../img/volleyimg③.png") no-repeat center center;
   background-size: cover;
   transition: transform 0.8s ease;
 }
@@ -1072,11 +1072,11 @@ a {
   transform: scale(1.1);
 }
 .zoom-contents .banner2:after {
-  background: url("../asset/img/volleyimg④.png") no-repeat center center;
+  background: url("../img/volleyimg④.png") no-repeat center center;
   background-size: cover;
 }
 .zoom-contents .banner3:after {
-  background: url("../asset/img/volleyimg⑤.png") no-repeat center center;
+  background: url("../img/volleyimg⑤.png") no-repeat center center;
   background-size: cover;
 }
 
