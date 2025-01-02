@@ -59,6 +59,11 @@ footer .contact div figure div img {
 footer .contact div img {
   width: 800px;
 }
+@media screen and (max-width: 1010px) {
+  footer .contact div img {
+    width: 692px;
+  }
+}
 footer .contact div .account {
   margin-top: 50px;
   gap: 30px;
