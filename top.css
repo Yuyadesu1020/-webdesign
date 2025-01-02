@@ -386,9 +386,14 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0;
+  gap: 150px;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 1430px) {
+  #hero {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 1010px) {
   #hero {
@@ -415,7 +420,12 @@ a {
   }
 }
 #hero .catchphrase div h1 {
-  font-size: 41px;
+  font-size: 50px;
+}
+@media screen and (max-width: 1290px) {
+  #hero .catchphrase div h1 {
+    font-size: 41px;
+  }
 }
 @media screen and (max-width: 640px) {
   #hero .catchphrase div h1 {

@@ -23,9 +23,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0;
+  gap: 150px;
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 1430px){
+    gap: 0;
+  }
   @include mixin.tablet{
     position: relative;
     flex-direction: column;
@@ -46,6 +49,9 @@
       }
       h1 {
         font-size: var.$title;
+        @media screen and (max-width: 1290px){
+          font-size: 41px;
+      }
         @include mixin.mobile{
           font-size: 27px;
         }
