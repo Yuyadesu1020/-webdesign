@@ -48,3 +48,16 @@ $(document).ready(function () {
       dots: true, // ドットナビゲーション
     });
   });
+
+  //メニューボタントーグル
+$(document).ready(function () {
+    $(".openbtn").click(function () {
+        $(this).toggleClass('active');
+        $("nav").toggleClass('active');
+    });
+
+    $("#removeActiveButton").click(function () {
+        $(".openbtn").removeClass('active');
+        $("nav").removeClass('active');
+    });
+});

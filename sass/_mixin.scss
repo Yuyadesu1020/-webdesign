@@ -55,8 +55,11 @@
     font-size: 30px;
     font-style: normal;
     @include tablet{
-        padding: 36px 0 36px 98px;
-      }
+        text-align: center;
+    }
+    @include mobile{
+        font-size: 25px;
+    }
   }
 
   p {
@@ -69,6 +72,10 @@
     font-style: normal;
     @include tablet{
         width: 500px;
+    }
+    @include mobile{
+        width: 350px;
+        font-size: 14px;
     }
   }
 
@@ -127,7 +134,7 @@
 
 // レスポンシブ対応
 $tb: 1010px;
-$mb: 761px;
+$mb: 640px;
 
 @mixin tablet{
     @media screen and (max-width: $tb){

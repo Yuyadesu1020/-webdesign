@@ -39,10 +39,16 @@
         position: absolute;
         top: 275px;
         padding-left: 50px;
-        z-index: 10;
+        z-index: 1;
+      }
+      @include mixin.mobile{
+        padding-left: 25px;
       }
       h1 {
         font-size: var.$title;
+        @include mixin.mobile{
+          font-size: 27px;
+        }
       }
       p {
         position: relative;
@@ -50,6 +56,9 @@
         padding-left: 6.895833333333332vw;
         padding-bottom: 1.5625vw;
         padding-top: 0.5208333333333333vw;
+        @include mixin.mobile{
+          width: 260px;
+        }
         &::before {
           content: "";
           width: 4.6875vw;
@@ -58,6 +67,9 @@
           opacity: 0.8;
           top: 1.5vw;
           left: 0.6458333333333335vw;
+          @include mixin.mobile{
+           top: 3.5vw;
+          }
         }
       }
     }
@@ -73,7 +85,7 @@
       object-fit: cover;
       object-position: 100% 0%;
       @include mixin.tablet{
-        object-position: 100% 147%;
+        object-position: 48% 147%;
         height: 130svh;
       }
       @include mixin.tablet2{
@@ -158,6 +170,13 @@
   }
 }
 
+.detail{
+  @include mixin.mobile{
+    text-align: center;
+    margin: 0;
+  }
+}
+
 #volleyball {
   width: 1000px;
   @include mixin.tablet{
@@ -179,6 +198,10 @@
       @include mixin.tablet{
         width: 500px;
         height: 398px;
+      }
+      @include mixin.mobile{
+        width: 350px;
+        height: 269px;
       }
     }
     .banner {
@@ -232,6 +255,10 @@
         width: 500px;
         height: 398px;
       }
+      @include mixin.mobile{
+        width: 350px;
+        height: 269px;
+      }
     }
     .banner2 {
       overflow: hidden;
@@ -271,10 +298,14 @@
     }
     .info {
       a {
-        display: inline-block;
+        display: block;
         border: solid 1px #1c1b1c;
         padding: 9px 50px;
         transition: all 0.3s ease-in-out;
+        @include mixin.mobile{
+          width: 63%;
+          margin: 0 auto;
+        }
         &:hover {
           color: #faf1f1;
           background-color: #1c1b1c;
@@ -292,11 +323,17 @@
   width: 100%;
   padding: 40px 0 83px 0;
   background-color: var.$accent_color;
+  include mixin.mobile{
+    padding-bottom: 56px;
+  }
   h2 {
     text-align: center;
     padding: 0 0 36px 0;
     a{
       font-size: 30px;
+      @include mixin.mobile{
+        font-size: 25px;
+      }
     }
   }
   .slide-container {
@@ -314,6 +351,10 @@
         width: 300px;
         object-fit: cover;
         margin-right: 60px;
+        @include mixin.mobile{
+          width: 180px;
+          margin-right: 30px;
+        }
       }
       @keyframes slide-flow {
         0% {
