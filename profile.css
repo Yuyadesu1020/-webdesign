@@ -612,7 +612,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/volleyball.png");
+  background: url("../img/volleyball.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -671,7 +671,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/airplane.png");
+  background: url("../img/airplane.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -894,7 +894,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/volleyimg③.png") no-repeat center center;
+  background: url("../img/volleyimg3.jpg") no-repeat center center;
   background-size: cover;
   transition: transform 0.8s ease;
 }
@@ -902,11 +902,11 @@ a {
   transform: scale(1.1);
 }
 .zoom-contents .banner2:after {
-  background: url("../img/volleyimg④.png") no-repeat center center;
+  background: url("../img/volleyimg4.jpg") no-repeat center center;
   background-size: cover;
 }
 .zoom-contents .banner3:after {
-  background: url("../img/volleyimg⑤.png") no-repeat center center;
+  background: url("../img/volleyimg5.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -1064,7 +1064,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("../img/volleyimg③.png") no-repeat center center;
+  background: url("../img/volleyimg3.jpg") no-repeat center center;
   background-size: cover;
   transition: transform 0.8s ease;
 }
@@ -1072,11 +1072,11 @@ a {
   transform: scale(1.1);
 }
 .zoom-contents .banner2:after {
-  background: url("../img/volleyimg④.png") no-repeat center center;
+  background: url("../img/volleyimg4.jpg") no-repeat center center;
   background-size: cover;
 }
 .zoom-contents .banner3:after {
-  background: url("../img/volleyimg⑤.png") no-repeat center center;
+  background: url("../img/volleyimg5.jpg") no-repeat center center;
   background-size: cover;
 }
 
