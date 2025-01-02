@@ -106,7 +106,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background: url("../img/volleyimg3.jpg") no-repeat center center;
+        background: url("/img/volleyimg3.jpg") no-repeat center center;
         background-size: cover;
         transition: transform 0.8s ease;
       }
@@ -118,14 +118,14 @@
     .banner2 {
       @extend .banner;
       &:after {
-        background: url("../img/volleyimg4.jpg") no-repeat center center;
+        background: url("/img/volleyimg4.jpg") no-repeat center center;
         background-size: cover;
       }
     }
     .banner3 {
       @extend .banner;
       &:after {
-        background: url("../img/volleyimg5.jpg") no-repeat center center;
+        background: url("/img/volleyimg5.jpg") no-repeat center center;
         background-size: cover;
       }
     }
