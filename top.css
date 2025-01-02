@@ -208,15 +208,16 @@ footer .scroll.visible {
   opacity: 1;
 }
 footer .scroll .go-top {
-  font-size: 50px;
+  font-size: 53px;
   color: #faf1f1;
   padding-left: 9px;
-  line-height: 49px;
+  line-height: 72px;
   transition: all 0.5s ease;
 }
 @media screen and (max-width: 640px) {
   footer .scroll .go-top {
     font-size: 29px;
+    line-height: 49px;
   }
 }
 footer .scroll .go-top:hover {
@@ -685,7 +686,11 @@ a {
   justify-content: center;
   align-items: center;
   gap: 53px;
-  flex-direction: column-reverse;
+}
+@media screen and (max-width: 1010px) {
+  #profile .profile_box {
+    flex-direction: column-reverse;
+  }
 }
 #profile .profile_box h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -693,10 +698,16 @@ a {
   letter-spacing: 0.4rem;
 }
 #profile .profile_box .info a {
+  width: 40%;
   display: block;
   border: solid 1px #1c1b1c;
   padding: 9px 50px;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1010px) {
+  #profile .profile_box .info a {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 640px) {
   #profile .profile_box .info a {

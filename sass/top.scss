@@ -287,7 +287,9 @@
 }
   .profile_box {
     @include mixin.middle_box();
-    flex-direction: column-reverse;
+    @include mixin.tablet{
+      flex-direction: column-reverse;   
+    }
     h3 {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 25px;
@@ -295,10 +297,14 @@
     }
     .info {
       a {
+        width: 40%;
         display: block;
         border: solid 1px #1c1b1c;
         padding: 9px 50px;
         transition: all 0.3s ease-in-out;
+        @include mixin.tablet{
+          margin: 0 auto;
+        }
         @include mixin.mobile{
           width: 63%;
           margin: 0 auto;
