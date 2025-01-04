@@ -19,7 +19,10 @@
 @include mixin.zoomimg;
 
 h1 {
-  font-size: 30px;
+  font-size: 36px;
+  @include mixin.mobile{
+    font-size: 27px;
+  }
 }
 
 #hero {
@@ -27,12 +30,31 @@ h1 {
     margin: 0 auto;
     padding-top: 197px;
     justify-content: left;
-    gap: 15px
+    gap: 15px;
+    @include mixin.tablet{
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include mixin.mobile{
+      padding-top: 116px;
+    }
   }
   div {
     @include mixin.middle_box;
+    @include mixin.tablet{
+      gap: 22px;
+    }
     .heroimg {
-      height: 500px;
+      width: 475px;
+      height: 400px;
+      object-fit: cover;
+      @include mixin.tablet{
+        width: 600px;
+      }
+      @include mixin.mobile{
+        width: 350px;
+        height: 290px;
+      }
     }
   }
 }
@@ -40,7 +62,6 @@ h1 {
 #descript{
     margin: 90px auto 50px auto;
     width: 100%;
-    font-size: 20px;
     line-height: 3.3rem;
     text-align: center;
 }
@@ -48,14 +69,27 @@ h1 {
 #descript2{
     .phase1, .phase2{
         @include mixin.middle_box;
+        @include mixin.tablet{
+          gap: 22px;
+        }
         padding-top: 60px;
         img{
-            width: 450px;
+          object-fit: cover;
+            width: 400px;
             height: 100%;
+            @include mixin.tablet{
+              width: 500px;
+            }
+            @include mixin.mobile{
+              width: 350px;
+            }
         }
     }
     .phase2{
         flex-direction: row-reverse;
+        @include mixin.tablet{
+          flex-direction: column;
+        }
     }
 }
 

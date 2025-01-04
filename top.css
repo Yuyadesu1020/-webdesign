@@ -316,7 +316,7 @@ section {
   padding: 40px 0;
   margin: 0 auto;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   section {
     width: 100%;
   }
@@ -340,7 +340,7 @@ h2 {
   font-size: 30px;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   h2 {
     text-align: center;
   }
@@ -360,7 +360,7 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   p {
     width: 500px;
   }
@@ -395,7 +395,7 @@ a {
     gap: 0;
   }
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero {
     position: relative;
     flex-direction: column;
@@ -406,7 +406,7 @@ a {
   flex-direction: column;
   text-align: left;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero .catchphrase div {
     position: absolute;
     top: 275px;
@@ -461,7 +461,7 @@ a {
 #hero div {
   position: relative;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero div {
     width: 100%;
   }
@@ -474,7 +474,7 @@ a {
   -o-object-position: 100% 0%;
      object-position: 100% 0%;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero div img {
     -o-object-position: 48% 147%;
        object-position: 48% 147%;
@@ -567,7 +567,7 @@ a {
 #volleyball {
   width: 1000px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #volleyball {
     width: 100%;
   }
@@ -579,7 +579,12 @@ a {
   align-items: center;
   gap: 53px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
+  #volleyball a {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1060px) {
   #volleyball a {
     flex-direction: column;
   }
@@ -592,7 +597,7 @@ a {
   width: 385px;
   height: 300px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #volleyball a .top_volley {
     width: 500px;
     height: 398px;
@@ -626,7 +631,7 @@ a {
 #travel {
   width: 1000px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #travel {
     width: 100%;
   }
@@ -638,7 +643,7 @@ a {
   justify-content: center;
   gap: 70px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #travel a {
     flex-direction: column;
   }
@@ -651,7 +656,7 @@ a {
   width: 385px;
   height: 300px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #travel a .top_travel {
     width: 500px;
     height: 398px;
@@ -686,7 +691,7 @@ a {
   width: 1000px;
   padding: 40px 0 80px 0;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #profile {
     width: 100%;
   }
@@ -697,7 +702,12 @@ a {
   align-items: center;
   gap: 53px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
+  #profile .profile_box {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1060px) {
   #profile .profile_box {
     flex-direction: column-reverse;
   }
@@ -714,7 +724,7 @@ a {
   padding: 9px 50px;
   transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #profile .profile_box .info a {
     margin: 0 auto;
   }

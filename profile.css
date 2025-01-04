@@ -326,7 +326,7 @@ section {
   padding: 40px 0;
   margin: 0 auto;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   section {
     width: 100%;
   }
@@ -350,7 +350,7 @@ h2 {
   font-size: 30px;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   h2 {
     text-align: center;
   }
@@ -370,7 +370,7 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   p {
     width: 500px;
   }
@@ -400,12 +400,12 @@ a {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1430px) {
   #hero {
     gap: 0;
   }
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero {
     position: relative;
     flex-direction: column;
@@ -416,7 +416,7 @@ a {
   flex-direction: column;
   text-align: left;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero .catchphrase div {
     position: absolute;
     top: 275px;
@@ -431,6 +431,11 @@ a {
 }
 #hero .catchphrase div h1 {
   font-size: 50px;
+}
+@media screen and (max-width: 1290px) {
+  #hero .catchphrase div h1 {
+    font-size: 41px;
+  }
 }
 @media screen and (max-width: 640px) {
   #hero .catchphrase div h1 {
@@ -466,7 +471,7 @@ a {
 #hero div {
   position: relative;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero div {
     width: 100%;
   }
@@ -479,7 +484,7 @@ a {
   -o-object-position: 100% 0%;
      object-position: 100% 0%;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #hero div img {
     -o-object-position: 48% 147%;
        object-position: 48% 147%;
@@ -572,7 +577,7 @@ a {
 #volleyball {
   width: 1000px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #volleyball {
     width: 100%;
   }
@@ -584,7 +589,12 @@ a {
   align-items: center;
   gap: 53px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
+  #volleyball a {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1060px) {
   #volleyball a {
     flex-direction: column;
   }
@@ -597,7 +607,7 @@ a {
   width: 385px;
   height: 300px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #volleyball a .top_volley {
     width: 500px;
     height: 398px;
@@ -631,7 +641,7 @@ a {
 #travel {
   width: 1000px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #travel {
     width: 100%;
   }
@@ -643,7 +653,7 @@ a {
   justify-content: center;
   gap: 70px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #travel a {
     flex-direction: column;
   }
@@ -656,7 +666,7 @@ a {
   width: 385px;
   height: 300px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #travel a .top_travel {
     width: 500px;
     height: 398px;
@@ -691,7 +701,7 @@ a {
   width: 1000px;
   padding: 40px 0 80px 0;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #profile {
     width: 100%;
   }
@@ -702,7 +712,12 @@ a {
   align-items: center;
   gap: 53px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
+  #profile .profile_box {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1060px) {
   #profile .profile_box {
     flex-direction: column-reverse;
   }
@@ -719,7 +734,7 @@ a {
   padding: 9px 50px;
   transition: all 0.3s ease-in-out;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   #profile .profile_box .info a {
     margin: 0 auto;
   }
@@ -827,7 +842,7 @@ section {
   padding: 40px 0;
   margin: 0 auto;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   section {
     width: 100%;
   }
@@ -851,7 +866,7 @@ h2 {
   font-size: 30px;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   h2 {
     text-align: center;
   }
@@ -871,7 +886,7 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   p {
     width: 500px;
   }
@@ -899,11 +914,22 @@ a {
   align-items: center;
   gap: 40px;
 }
+@media screen and (max-width: 1060px) {
+  .zoom-contents {
+    flex-direction: column;
+  }
+}
 .zoom-contents .banner, .zoom-contents .banner2, .zoom-contents .banner3 {
   overflow: hidden;
   position: relative;
   width: 500px;
   height: 350px;
+}
+@media screen and (max-width: 640px) {
+  .zoom-contents .banner, .zoom-contents .banner2, .zoom-contents .banner3 {
+    width: 350px;
+    height: 270px;
+  }
 }
 .zoom-contents .banner:after, .zoom-contents .banner2:after, .zoom-contents .banner3:after {
   content: "";
@@ -927,7 +953,12 @@ a {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 36px;
+}
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 27px;
+  }
 }
 
 #hero .topicpath {
@@ -936,20 +967,54 @@ h1 {
   justify-content: left;
   gap: 15px;
 }
+@media screen and (max-width: 1060px) {
+  #hero .topicpath {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  #hero .topicpath {
+    padding-top: 116px;
+  }
+}
 #hero div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 53px;
 }
+@media screen and (max-width: 1060px) {
+  #hero div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1060px) {
+  #hero div {
+    gap: 22px;
+  }
+}
 #hero div .heroimg {
-  height: 500px;
+  width: 475px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1060px) {
+  #hero div .heroimg {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #hero div .heroimg {
+    width: 350px;
+    height: 290px;
+  }
 }
 
 #descript {
   margin: 90px auto 50px auto;
   width: 100%;
-  font-size: 20px;
   line-height: 3.3rem;
   text-align: center;
 }
@@ -961,12 +1026,39 @@ h1 {
   gap: 53px;
   padding-top: 60px;
 }
+@media screen and (max-width: 1060px) {
+  #descript2 .phase1, #descript2 .phase2 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1060px) {
+  #descript2 .phase1, #descript2 .phase2 {
+    gap: 22px;
+  }
+}
 #descript2 .phase1 img, #descript2 .phase2 img {
-  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 400px;
   height: 100%;
+}
+@media screen and (max-width: 1060px) {
+  #descript2 .phase1 img, #descript2 .phase2 img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #descript2 .phase1 img, #descript2 .phase2 img {
+    width: 350px;
+  }
 }
 #descript2 .phase2 {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 1060px) {
+  #descript2 .phase2 {
+    flex-direction: column;
+  }
 }
 
 .zoom-contents {
@@ -997,7 +1089,7 @@ section {
   padding: 40px 0;
   margin: 0 auto;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   section {
     width: 100%;
   }
@@ -1021,7 +1113,7 @@ h2 {
   font-size: 30px;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   h2 {
     text-align: center;
   }
@@ -1041,7 +1133,7 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   p {
     width: 500px;
   }
@@ -1069,11 +1161,22 @@ a {
   align-items: center;
   gap: 40px;
 }
+@media screen and (max-width: 1060px) {
+  .zoom-contents {
+    flex-direction: column;
+  }
+}
 .zoom-contents .banner, .zoom-contents .banner3, .zoom-contents .banner2 {
   overflow: hidden;
   position: relative;
   width: 500px;
   height: 350px;
+}
+@media screen and (max-width: 640px) {
+  .zoom-contents .banner, .zoom-contents .banner3, .zoom-contents .banner2 {
+    width: 350px;
+    height: 270px;
+  }
 }
 .zoom-contents .banner:after, .zoom-contents .banner3:after, .zoom-contents .banner2:after {
   content: "";
@@ -1123,6 +1226,11 @@ h1 {
   align-items: center;
   gap: 53px;
   padding-top: 60px;
+}
+@media screen and (max-width: 1060px) {
+  #descript2 .phase3, #descript2 .phase4 {
+    flex-direction: column;
+  }
 }
 #descript2 .phase3 img, #descript2 .phase4 img {
   width: 450px;

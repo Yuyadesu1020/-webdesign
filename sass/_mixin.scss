@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
   gap: 53px;
+  @include tablet{
+    flex-direction: column;
+  }
   //@incudeとセットで
 }
 
@@ -96,11 +99,18 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    @include tablet{
+        flex-direction: column;
+    }
     .banner {
       overflow: hidden;
       position: relative;
       width: 500px;
       height: 350px;
+      @include mobile{
+        width: 350px;
+        height: 270px;
+      }
       &:after {
         content: "";
         display: block;
@@ -133,8 +143,14 @@
 }
 
 // レスポンシブ対応
-$tb: 1010px;
+$tb: 1060px;
 $mb: 640px;
+
+@mixin big-tablet{
+    @media screen and (max-width: 1220px){
+        @content;
+    }
+}
 
 @mixin tablet{
     @media screen and (max-width: $tb){
