@@ -380,7 +380,7 @@ h2 {
 
 p {
   font-size: 18px;
-  line-height: 2.3rem;
+  line-height: 2.8rem;
   width: 500px;
   text-align: justify;
   font-family: "Shippori Mincho", serif;
@@ -932,7 +932,7 @@ h2 {
 
 p {
   font-size: 18px;
-  line-height: 2.3rem;
+  line-height: 2.8rem;
   width: 500px;
   text-align: justify;
   font-family: "Shippori Mincho", serif;
@@ -1078,10 +1078,15 @@ h1 {
 }
 
 #descript {
-  margin: 20px auto 20px auto;
+  margin: 60px auto 0 auto;
   width: 100%;
   line-height: 3.3rem;
   text-align: center;
+}
+@media screen and (max-width: 640px) {
+  #descript {
+    line-height: 1.9rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1212,7 +1217,7 @@ h2 {
 
 p {
   font-size: 18px;
-  line-height: 2.3rem;
+  line-height: 2.8rem;
   width: 500px;
   text-align: justify;
   font-family: "Shippori Mincho", serif;
@@ -1306,11 +1311,6 @@ h1 {
   content: "Yuya Kamachi";
   letter-spacing: 0.19em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-@media screen and (max-width: 1060px) {
-  #profile .top_profile {
-    width: 500px !important;
-  }
 }
 
 #descript2 .phase3, #descript2 .phase4 {

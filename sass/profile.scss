@@ -40,11 +40,6 @@ h1 {
             }
         }
     }
-    .top_profile {
-        @include mixin.tablet{
-            width: 500px !important;
-        }
-    }
 }
 
 #descript2{
