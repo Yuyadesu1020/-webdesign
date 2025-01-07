@@ -206,7 +206,7 @@
         height: 398px;
       }
       @include mixin.mobile{
-        width: 350px;
+        width: 294px;
         height: 269px;
       }
     }
@@ -265,7 +265,7 @@
         height: 398px;
       }
       @include mixin.mobile{
-        width: 350px;
+        width: 294px;
         height: 269px;
       }
     }
@@ -321,8 +321,8 @@
           margin: 0 auto;
         }
         @include mixin.mobile{
-          width: 63%;
-          margin: 0 auto;
+          width: 70%;
+          margin: 10px auto 0 auto;
         }
         &:hover {
           color: #faf1f1;
@@ -333,6 +333,10 @@
     .top_profile {
       overflow: hidden;
       width: 300px;
+      @include mixin.mobile{
+        width: 294px;
+        height: 400px;
+      }
     }
   }
 }

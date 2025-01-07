@@ -40,12 +40,12 @@ h1 {
             }
         }
     }
+    .top_profile {
+        @include mixin.tablet{
+            width: 500px !important;
+        }
+    }
 }
-
-.top_profile {
-    overflow: hidden;
-    width: 300px;
-  }
 
 #descript2{
     .phase3, .phase4{
@@ -54,10 +54,19 @@ h1 {
         img{
             width: 450px;
             height: 100%;
+            @include mixin.tablet{
+                width: 500px;
+            }
+            @include mixin.mobile{
+                width: 294px;
+            }
         }
     }
     .phase4{
         flex-direction: row-reverse;
+        @include mixin.tablet{
+            flex-direction: column;
+        }
     }
 }
 

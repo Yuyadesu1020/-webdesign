@@ -272,14 +272,14 @@ footer .contact div figure div img {
 footer .contact div img {
   width: 800px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   footer .contact div img {
-    width: 640px;
+    width: 630px;
   }
 }
 @media screen and (max-width: 640px) {
   footer .contact div img {
-    width: 350px;
+    width: 294px;
   }
 }
 footer .contact div .account {
@@ -317,6 +317,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   padding: 30px 0 30px 0;
+}
+@media screen and (max-width: 640px) {
+  footer .copyright {
+    font-size: 9px;
+  }
 }
 
 * {
@@ -390,8 +395,9 @@ p {
 }
 @media screen and (max-width: 640px) {
   p {
-    width: 350px;
+    width: 294px;
     font-size: 11px;
+    line-height: 1.6rem;
   }
 }
 
@@ -633,7 +639,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   #volleyball a .top_volley {
-    width: 350px;
+    width: 294px;
     height: 269px;
   }
 }
@@ -700,7 +706,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   #travel a .top_travel {
-    width: 350px;
+    width: 294px;
     height: 269px;
   }
 }
@@ -775,8 +781,8 @@ a {
 }
 @media screen and (max-width: 640px) {
   #profile .profile_box .info a {
-    width: 63%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 10px auto 0 auto;
   }
 }
 #profile .profile_box .info a:hover {
@@ -786,6 +792,12 @@ a {
 #profile .profile_box .top_profile {
   overflow: hidden;
   width: 300px;
+}
+@media screen and (max-width: 640px) {
+  #profile .profile_box .top_profile {
+    width: 294px;
+    height: 400px;
+  }
 }
 
 #fashion {
@@ -935,8 +947,9 @@ p {
 }
 @media screen and (max-width: 640px) {
   p {
-    width: 350px;
+    width: 294px;
     font-size: 11px;
+    line-height: 1.6rem;
   }
 }
 
@@ -961,6 +974,11 @@ a {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 640px) {
+  .zoom-contents {
+    gap: 10px;
+  }
+}
 .zoom-contents .banner, .zoom-contents .banner2, .zoom-contents .banner3 {
   overflow: hidden;
   position: relative;
@@ -969,7 +987,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   .zoom-contents .banner, .zoom-contents .banner2, .zoom-contents .banner3 {
-    width: 350px;
+    width: 294px;
     height: 270px;
   }
 }
@@ -1049,29 +1067,34 @@ h1 {
 }
 @media screen and (max-width: 1060px) {
   #hero div .heroimg {
-    width: 600px;
+    width: 630px;
   }
 }
 @media screen and (max-width: 640px) {
   #hero div .heroimg {
-    width: 350px;
+    width: 294px;
     height: 290px;
   }
 }
 
 #descript {
-  margin: 90px auto 50px auto;
+  margin: 20px auto 20px auto;
   width: 100%;
   line-height: 3.3rem;
   text-align: center;
 }
 
+@media screen and (max-width: 640px) {
+  #descript2 {
+    padding-top: 0;
+  }
+}
 #descript2 .phase1, #descript2 .phase2 {
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 53px;
-  padding-top: 60px;
 }
 @media screen and (max-width: 1060px) {
   #descript2 .phase1, #descript2 .phase2 {
@@ -1091,6 +1114,7 @@ h1 {
 @media screen and (max-width: 640px) {
   #descript2 .phase1, #descript2 .phase2 {
     gap: 11px;
+    padding-top: 40px;
   }
 }
 #descript2 .phase1 img, #descript2 .phase2 img {
@@ -1106,7 +1130,7 @@ h1 {
 }
 @media screen and (max-width: 640px) {
   #descript2 .phase1 img, #descript2 .phase2 img {
-    width: 350px;
+    width: 294px;
   }
 }
 #descript2 .phase2 {
@@ -1120,6 +1144,11 @@ h1 {
 
 .zoom-contents {
   margin-top: 50px;
+}
+@media screen and (max-width: 640px) {
+  .zoom-contents {
+    margin-top: 0;
+  }
 }
 
 /* 
@@ -1198,8 +1227,9 @@ p {
 }
 @media screen and (max-width: 640px) {
   p {
-    width: 350px;
+    width: 294px;
     font-size: 11px;
+    line-height: 1.6rem;
   }
 }
 
@@ -1224,6 +1254,11 @@ a {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 640px) {
+  .zoom-contents {
+    gap: 10px;
+  }
+}
 .zoom-contents .banner, .zoom-contents .banner3, .zoom-contents .banner2 {
   overflow: hidden;
   position: relative;
@@ -1232,7 +1267,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   .zoom-contents .banner, .zoom-contents .banner3, .zoom-contents .banner2 {
-    width: 350px;
+    width: 294px;
     height: 270px;
   }
 }
@@ -1272,10 +1307,10 @@ h1 {
   letter-spacing: 0.19em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-.top_profile {
-  overflow: hidden;
-  width: 300px;
+@media screen and (max-width: 1060px) {
+  #profile .top_profile {
+    width: 500px !important;
+  }
 }
 
 #descript2 .phase3, #descript2 .phase4 {
@@ -1299,6 +1334,21 @@ h1 {
   width: 450px;
   height: 100%;
 }
+@media screen and (max-width: 1060px) {
+  #descript2 .phase3 img, #descript2 .phase4 img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #descript2 .phase3 img, #descript2 .phase4 img {
+    width: 294px;
+  }
+}
 #descript2 .phase4 {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 1060px) {
+  #descript2 .phase4 {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=profile.css.map */

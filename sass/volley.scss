@@ -49,10 +49,10 @@ h1 {
       height: 400px;
       object-fit: cover;
       @include mixin.tablet{
-        width: 600px;
+        width: 630px;
       }
       @include mixin.mobile{
-        width: 350px;
+        width: 294px;
         height: 290px;
       }
     }
@@ -60,22 +60,26 @@ h1 {
 }
 
 #descript{
-    margin: 90px auto 50px auto;
+    margin: 20px auto 20px auto;
     width: 100%;
     line-height: 3.3rem;
     text-align: center;
 }
 
 #descript2{
+    @include mixin.mobile{
+      padding-top: 0;
+    }
     .phase1, .phase2{
+        padding-top: 60px;
         @include mixin.middle_box;
         @include mixin.tablet{
           gap: 22px;
         }
         @include mixin.mobile{
           gap: 11px;
+          padding-top: 40px;
         }
-        padding-top: 60px;
         img{
           object-fit: cover;
             width: 400px;
@@ -84,7 +88,7 @@ h1 {
               width: 500px;
             }
             @include mixin.mobile{
-              width: 350px;
+              width: 294px;
             }
         }
     }
@@ -98,4 +102,7 @@ h1 {
 
 .zoom-contents{
     margin-top: 50px;
+    @include mixin.mobile{
+      margin-top: 0;
+    }
 }

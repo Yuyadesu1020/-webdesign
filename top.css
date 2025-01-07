@@ -262,14 +262,14 @@ footer .contact div figure div img {
 footer .contact div img {
   width: 800px;
 }
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1060px) {
   footer .contact div img {
-    width: 640px;
+    width: 630px;
   }
 }
 @media screen and (max-width: 640px) {
   footer .contact div img {
-    width: 350px;
+    width: 294px;
   }
 }
 footer .contact div .account {
@@ -307,6 +307,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   padding: 30px 0 30px 0;
+}
+@media screen and (max-width: 640px) {
+  footer .copyright {
+    font-size: 9px;
+  }
 }
 
 * {
@@ -380,8 +385,9 @@ p {
 }
 @media screen and (max-width: 640px) {
   p {
-    width: 350px;
+    width: 294px;
     font-size: 11px;
+    line-height: 1.6rem;
   }
 }
 
@@ -623,7 +629,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   #volleyball a .top_volley {
-    width: 350px;
+    width: 294px;
     height: 269px;
   }
 }
@@ -690,7 +696,7 @@ a {
 }
 @media screen and (max-width: 640px) {
   #travel a .top_travel {
-    width: 350px;
+    width: 294px;
     height: 269px;
   }
 }
@@ -765,8 +771,8 @@ a {
 }
 @media screen and (max-width: 640px) {
   #profile .profile_box .info a {
-    width: 63%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 10px auto 0 auto;
   }
 }
 #profile .profile_box .info a:hover {
@@ -776,6 +782,12 @@ a {
 #profile .profile_box .top_profile {
   overflow: hidden;
   width: 300px;
+}
+@media screen and (max-width: 640px) {
+  #profile .profile_box .top_profile {
+    width: 294px;
+    height: 400px;
+  }
 }
 
 #fashion {

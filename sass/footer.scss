@@ -79,11 +79,11 @@ footer {
       }
       img {
         width: 800px;
-        @media screen and (max-width: 1010px){
-            width: 640px;
+        @media screen and (max-width: 1060px){
+            width: 630px;
         }
         @media screen and (max-width: 640px){
-            width: 350px;
+            width: 294px;
         }
       }
       .account {
@@ -121,5 +121,8 @@ footer {
     display: flex;
     justify-content: center;
     padding: 30px 0 30px 0;
+    @include mixin.mobile{
+        font-size: 9px;
+    }
   }
 }

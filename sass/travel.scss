@@ -45,7 +45,7 @@ h1 {
                 height: 45svh;
             }
               @include mixin.mobile{
-                width: 350px;
+                width: 294px;
                 height: 36svh;
             }
         }
@@ -62,7 +62,7 @@ h1 {
         height: 36svh;
     }
     @include mixin.mobile{
-        width: 350px;
+        width: 294px;
         height: 36svh;
         gap: 10px;
         padding-bottom: 10px;
@@ -78,6 +78,7 @@ h1 {
                 width: 169px;
             }
               @include mixin.mobile{
+                object-position: 83% 50%;
                 width: 83px;
             }
         }
@@ -107,7 +108,7 @@ h1 {
                 height: 36svh;
             }
               @include mixin.mobile{
-                width: 350px;
+                width: 294px;
                 height: 36svh;
             }
         }
@@ -116,7 +117,7 @@ h1 {
                 width: 630px;
             }
               @include mixin.mobile{
-                width: 350px;
+                width: 294px;
             }
         }
     }
@@ -137,6 +138,9 @@ h1 {
             }
             .slider {
                 padding: 0 20px;
+                @include mixin.mobile{
+                    padding: 0 50px;
+                }
               img {
                 width: 450px;
                 height: 350px;
@@ -166,7 +170,7 @@ h1 {
   }
 
   @include mixin.mobile {
-    width: 350px; /* モバイル時のスライダー幅 */
+    width: 294px; /* モバイル時のスライダー幅 */
   }
 }
 
@@ -177,6 +181,9 @@ h1 {
                 }
                 .slick-dots {
                     bottom: -34px;
+                    @include mixin.mobile{
+                      left: 3%;  
+                    }
                 }
 
               li {
@@ -226,7 +233,7 @@ h1 {
                     width: 630px;
                 }
                 @include mixin.mobile{
-                    width: 350px;
+                    width: 294px;
                 }
                 &:hover{
                     scale: 1.1;

@@ -81,8 +81,9 @@
         width: 500px;
     }
     @include mobile{
-        width: 350px;
+        width: 294px;
         font-size: 11px;
+        line-height: 1.6rem;
     }
   }
 
@@ -106,13 +107,16 @@
     @include tablet{
         flex-direction: column;
     }
+    @include mobile{
+        gap: 10px;
+    }
     .banner {
       overflow: hidden;
       position: relative;
       width: 500px;
       height: 350px;
       @include mobile{
-        width: 350px;
+        width: 294px;
         height: 270px;
       }
       &:after {
