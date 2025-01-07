@@ -12,6 +12,9 @@
   @include tablet{
     flex-direction: column;
   }
+  @include mobile{
+    gap: 11px;
+  }
   //@incudeとセットで
 }
 
@@ -52,7 +55,7 @@
 
   h2 {
     margin: 0 auto;
-    padding: 36px 0;
+    padding: 40px 0 30px 0;
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-size: 30px;
@@ -73,12 +76,13 @@
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
     @include tablet{
         width: 500px;
     }
     @include mobile{
         width: 350px;
-        font-size: 14px;
+        font-size: 11px;
     }
   }
 

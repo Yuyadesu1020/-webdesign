@@ -175,6 +175,11 @@ header .openbtn.active span:nth-of-type(3) {
 footer {
   margin-top: 80px;
 }
+@media screen and (max-width: 640px) {
+  footer {
+    margin-top: 40px;
+  }
+}
 footer .pagetop {
   border-radius: 80%;
   background-color: rgba(28, 27, 28, 0.7);
@@ -230,6 +235,7 @@ footer .contact div figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 footer .contact div figure h2 {
   box-sizing: content-box;
@@ -267,8 +273,8 @@ footer .contact div img {
   }
 }
 footer .contact div .account {
-  margin-top: 50px;
-  gap: 30px;
+  margin-top: 12px;
+  gap: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,6 +289,12 @@ footer .contact div .account .mail {
 footer .contact div .account .mail:hover {
   color: #faf1f1;
   background-color: #1c1b1c;
+}
+@media screen and (max-width: 640px) {
+  footer .contact div .account .mail {
+    padding: 13px 35px;
+    font-size: 11px;
+  }
 }
 footer .contact div .account .icon {
   font-size: 65px;
@@ -334,7 +346,7 @@ h1 {
 
 h2 {
   margin: 0 auto;
-  padding: 36px 0;
+  padding: 40px 0 30px 0;
   font-family: "Shippori Mincho", serif;
   font-weight: 400;
   font-size: 30px;
@@ -359,6 +371,7 @@ p {
   font-family: "Shippori Mincho", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 @media screen and (max-width: 1060px) {
   p {
@@ -368,7 +381,7 @@ p {
 @media screen and (max-width: 640px) {
   p {
     width: 350px;
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 
@@ -463,6 +476,11 @@ h1 {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 640px) {
+  #hero div {
+    gap: 11px;
+  }
+}
 @media screen and (max-width: 1060px) {
   #hero div {
     gap: 22px;
@@ -505,9 +523,19 @@ h1 {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 640px) {
+  #descript2 .phase1, #descript2 .phase2 {
+    gap: 11px;
+  }
+}
 @media screen and (max-width: 1060px) {
   #descript2 .phase1, #descript2 .phase2 {
     gap: 22px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #descript2 .phase1, #descript2 .phase2 {
+    gap: 11px;
   }
 }
 #descript2 .phase1 img, #descript2 .phase2 img {

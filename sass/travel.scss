@@ -24,10 +24,15 @@ h1 {
 }
 
 #hero{
+    @include mixin.mobile{
+        padding-bottom: 10px;
+    }
     .topicpath {
         padding-top: 197px;
+        @include mixin.mobile{
+            padding-top: 116px;
+        }
     }
-    padding-top: 0;
     div{
         @include mixin.middle_box;
         .heroimg{
@@ -35,6 +40,14 @@ h1 {
             height: 60svh;
             object-fit: cover;
             margin-top: 50px;
+            @include mixin.tablet{
+                width: 630px;
+                height: 45svh;
+            }
+              @include mixin.mobile{
+                width: 350px;
+                height: 36svh;
+            }
         }
     }
 }
@@ -44,6 +57,16 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    @include mixin.tablet{
+        width: 630px;
+        height: 36svh;
+    }
+    @include mixin.mobile{
+        width: 350px;
+        height: 36svh;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
     div{
         text-align: right;
         .sub1{
@@ -51,6 +74,12 @@ h1 {
             height: 100%;
             object-fit: cover;
             object-position: 95% 50%;
+            @include mixin.tablet{
+                width: 169px;
+            }
+              @include mixin.mobile{
+                width: 83px;
+            }
         }
 
         .sub2{
@@ -64,11 +93,38 @@ h1 {
 
 #descript2{
     padding-top: 90px;
+    @include mixin.mobile{
+        padding-top: 0;
+    }
     .phase1, .phase2{
         padding-top: 60px;
+        @include mixin.mobile{
+            padding-top: 40px;
+        }
+        img{
+            @include mixin.tablet{
+                width: 630px;
+                height: 36svh;
+            }
+              @include mixin.mobile{
+                width: 350px;
+                height: 36svh;
+            }
+        }
+        p{
+            @include mixin.tablet{
+                width: 630px;
+            }
+              @include mixin.mobile{
+                width: 350px;
+            }
+        }
     }
     .phase3{
         padding-top: 80px;
+        @include mixin.mobile{
+            padding-top: 0;
+        }
         p{
             margin: 0 auto;
             text-align: center;
@@ -76,7 +132,9 @@ h1 {
         .slide-hero {
             width: 100%;
             margin: 40px auto;
-          
+            @include mixin.tablet{
+                overflow: hidden;
+            }
             .slider {
                 padding: 0 20px;
               img {
@@ -95,6 +153,24 @@ h1 {
                 opacity: 1;
               }
             }
+
+            .slick-track {
+  opacity: 1;
+  transition: transform 0.3s ease-in-out;
+
+  // デフォルト（PC用）
+  width: 100%; /* 全体幅を指定 */
+
+  @include mixin.tablet {
+    width: 630px; /* タブレット時のスライダー幅 */
+  }
+
+  @include mixin.mobile {
+    width: 350px; /* モバイル時のスライダー幅 */
+  }
+}
+
+
                 .slick-prev:before,
                 .slick-next:before{
                     color: #4e4e4e;
@@ -135,8 +211,10 @@ h1 {
 }
 
 #banner{
-    width: 1000px;
     padding-bottom: 0;
+    @include mixin.mobile{
+        padding-top: 0;
+    }
     div{
         a{
             display: flex;
@@ -144,6 +222,12 @@ h1 {
             img{
                 width: 60%;
                 transition: all 0.3s ease;
+                @include mixin.tablet{
+                    width: 630px;
+                }
+                @include mixin.mobile{
+                    width: 350px;
+                }
                 &:hover{
                     scale: 1.1;
                 }

@@ -72,6 +72,9 @@ h1 {
         @include mixin.tablet{
           gap: 22px;
         }
+        @include mixin.mobile{
+          gap: 11px;
+        }
         padding-top: 60px;
         img{
           object-fit: cover;

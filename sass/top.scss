@@ -237,7 +237,10 @@
   width: 1000px;
   @include mixin.tablet{
     width: 100%;
-}
+  }
+  h2{
+    padding-top: 0;
+  }
   a {
     display: flex;
     flex-direction: row-reverse;
@@ -246,6 +249,9 @@
     gap: 70px;
     @include mixin.tablet{
      flex-direction: column; 
+    }
+    @include mixin.mobile{
+      gap: 11px;
     }
     &:hover {
       cursor: zoom-in;
@@ -290,7 +296,10 @@
   padding: 40px 0 80px 0;
   @include mixin.tablet{
     width: 100%;
-}
+  }
+  h2{
+    padding-top: 0;
+  }
   .profile_box {
     @include mixin.middle_box();
     @include mixin.tablet{
@@ -330,14 +339,17 @@
 
 #fashion {
   width: 100%;
-  padding: 40px 0 83px 0;
+  padding: 40px 0 80px 0;
   background-color: var.$accent_color;
-  include mixin.mobile{
-    padding-bottom: 56px;
+  @include mixin.mobile{
+    padding-bottom: 40px;
   }
   h2 {
     text-align: center;
     padding: 0 0 36px 0;
+    @include mixin.mobile{
+      padding-bottom: 5px;
+    }
     a{
       font-size: 30px;
       @include mixin.mobile{
