@@ -470,7 +470,7 @@ h1 {
 }
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
@@ -758,6 +758,31 @@ a {
   background-size: cover;
 }
 
-h1 {
-  font-size: 30px;
+.album {
+  -moz-columns: 3;
+       columns: 3; /*段組みの数*/
+  padding: 0 25px; /*ギャラリー左右に余白をつける*/
+  margin: 0;
+  gap: 53px;
+  /*ギャラリー内のイメージは横幅100%にする*/
+}
+@media screen and (max-width: 1060px) {
+  .album {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}
+.album li {
+  margin-bottom: 25px; /*各画像下に余白をつける*/
+  list-style: none;
+}
+.album li p {
+  text-align: center;
+  width: 100%;
+}
+.album img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom; /*画像の下にできる余白を削除*/
+  box-shadow: 0px 0px 8px rgb(255, 255, 255);
 }/*# sourceMappingURL=fashion.css.map */

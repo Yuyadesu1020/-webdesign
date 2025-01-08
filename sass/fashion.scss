@@ -19,7 +19,28 @@
 @include mixin.all;
 @include mixin.zoomimg;
 
-h1 {
-  font-size: 30px;
+.album{
+    columns: 3;/*段組みの数*/
+    padding:0 25px;/*ギャラリー左右に余白をつける*/
+    margin:0;
+    gap: 53px;
+    @include mixin.tablet{
+        columns: 3;
+    }
+    li{
+        margin-bottom: 25px;/*各画像下に余白をつける*/
+        list-style:none;
+        p{
+            text-align: center;
+            width: 100%;
+        }
+    }
+    /*ギャラリー内のイメージは横幅100%にする*/
+    img{
+        width:100%;
+        height:auto;
+        vertical-align: bottom;/*画像の下にできる余白を削除*/
+        box-shadow: 0px 0px 8px rgb(255, 255, 255);
+    }
 }
 
