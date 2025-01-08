@@ -309,6 +309,10 @@
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 25px;
       letter-spacing: 0.4rem;
+      @include mixin.mobile{
+        font-size: 18px;
+        letter-spacing: 0.1rem;
+      }
     }
     .info {
       a {

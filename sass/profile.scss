@@ -25,29 +25,46 @@ h1 {
 }
 
 #profile {
-  .profile_box {
-    div {
-      h3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        gap: 14px;
-        &:before {
-          content: "Yuya Kamachi";
-          letter-spacing: 0.19em;
-          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        }
-      }
+    @include mixin.mobile{
+        padding-top: 163px;
+        padding-bottom: 0;
     }
-  }
+    .profile_box {
+        div {
+        h3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            gap: 14px;
+            @include mixin.mobile{
+                gap: 5px;
+                font-size: 18px;
+            }
+            &:before {
+            content: "Yuya Kamachi";
+            letter-spacing: 0.19em;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            }
+            @include mixin.mobile{
+                letter-spacing: 0.1rem;
+            }
+        }
+        }
+    }
 }
 
 #descript2 {
+    @include mixin.mobile{
+        padding-bottom: 0;
+    }
   .phase3,
   .phase4 {
     @include mixin.middle_box;
     padding-top: 60px;
+    @include mixin.mobile{
+        padding-top: 40px;
+    }
     img {
       width: 450px;
       height: 100%;
@@ -63,6 +80,15 @@ h1 {
     flex-direction: row-reverse;
     @include mixin.tablet {
       flex-direction: column;
+    }
+    span{
+        display: block;
+        padding-left: 20px;
+    }
+    .br{
+        @include mixin.mobile{
+            display: none;
+        }
     }
   }
 }

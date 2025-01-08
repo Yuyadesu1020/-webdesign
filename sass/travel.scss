@@ -33,6 +33,33 @@ h1 {
             padding-top: 116px;
         }
     }
+    .catchphrase{
+        justify-content: left;
+        @include mixin.tablet{
+            width: 630px;
+            margin: 0 auto;
+        }
+        @include mixin.mobile{
+            width: 294px;
+            margin-top: 50px;
+        }
+        h1 {
+            width: 100%;
+            text-align: left;
+            margin: 68px 0 0 0;
+            font-size: 36px; 
+            .br{
+                display: none;
+                @include mixin.mobile{
+                    display: inline-block;
+                }
+            }
+            @include mixin.mobile{
+                font-size: 20px;
+                margin: 40px auto;
+            }
+        }
+    }
     div{
         @include mixin.middle_box;
         .heroimg{
@@ -47,6 +74,7 @@ h1 {
               @include mixin.mobile{
                 width: 294px;
                 height: 36svh;
+                margin-top: 0;
             }
         }
     }
@@ -54,6 +82,7 @@ h1 {
 
 #sub_hero{
     padding-top: 0;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -93,7 +122,7 @@ h1 {
 }
 
 #descript2{
-    padding-top: 90px;
+    padding-top: 0;
     @include mixin.mobile{
         padding-top: 0;
     }
@@ -132,7 +161,7 @@ h1 {
         }
         .slide-hero {
             width: 100%;
-            margin: 40px auto;
+            margin: 0 auto 40px auto;
             @include mixin.tablet{
                 overflow: hidden;
             }

@@ -21,7 +21,7 @@
 h1 {
   font-size: 36px;
   @include mixin.mobile{
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
@@ -31,12 +31,14 @@ h1 {
     padding-top: 197px;
     justify-content: left;
     gap: 15px;
+    font-family: "Shippori Mincho", serif;
     @include mixin.tablet{
       flex-direction: row;
       justify-content: center;
     }
     @include mixin.mobile{
       padding-top: 116px;
+      display: none;
     }
   }
   div {
@@ -66,6 +68,7 @@ h1 {
     text-align: center;
     @include mixin.mobile{
       line-height: 1.9rem;
+      margin-top: 0;
     }
 }
 

@@ -338,6 +338,11 @@ section {
     width: 100%;
   }
 }
+@media screen and (max-width: 640px) {
+  section {
+    padding: 90px 0 40px 0;
+  }
+}
 
 img {
   width: 100%;
@@ -455,7 +460,7 @@ h1 {
 }
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
@@ -464,6 +469,7 @@ h1 {
   padding-top: 197px;
   justify-content: left;
   gap: 15px;
+  font-family: "Shippori Mincho", serif;
 }
 @media screen and (max-width: 1060px) {
   #hero .topicpath {
@@ -474,6 +480,7 @@ h1 {
 @media screen and (max-width: 640px) {
   #hero .topicpath {
     padding-top: 116px;
+    display: none;
   }
 }
 #hero div {
@@ -524,6 +531,7 @@ h1 {
 @media screen and (max-width: 640px) {
   #descript {
     line-height: 1.9rem;
+    margin-top: 0;
   }
 }
 

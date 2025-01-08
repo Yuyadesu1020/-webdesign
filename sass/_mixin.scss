@@ -41,6 +41,9 @@
     @include tablet{
         width: 100%;
     }
+    @include mobile{
+        padding: 90px 0 40px 0;
+    }
   }
 
   img {

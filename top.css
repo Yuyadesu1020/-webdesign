@@ -338,6 +338,11 @@ section {
     width: 100%;
   }
 }
+@media screen and (max-width: 640px) {
+  section {
+    padding: 90px 0 40px 0;
+  }
+}
 
 img {
   width: 100%;
@@ -756,6 +761,12 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 25px;
   letter-spacing: 0.4rem;
+}
+@media screen and (max-width: 640px) {
+  #profile .profile_box h3 {
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+  }
 }
 #profile .profile_box .info a {
   width: 40%;
