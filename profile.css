@@ -1313,7 +1313,8 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#descript2 .phase3, #descript2 .phase4 {
+#descript2 .phase3,
+#descript2 .phase4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1321,26 +1322,31 @@ h1 {
   padding-top: 60px;
 }
 @media screen and (max-width: 1060px) {
-  #descript2 .phase3, #descript2 .phase4 {
+  #descript2 .phase3,
+  #descript2 .phase4 {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 640px) {
-  #descript2 .phase3, #descript2 .phase4 {
+  #descript2 .phase3,
+  #descript2 .phase4 {
     gap: 11px;
   }
 }
-#descript2 .phase3 img, #descript2 .phase4 img {
+#descript2 .phase3 img,
+#descript2 .phase4 img {
   width: 450px;
   height: 100%;
 }
 @media screen and (max-width: 1060px) {
-  #descript2 .phase3 img, #descript2 .phase4 img {
+  #descript2 .phase3 img,
+  #descript2 .phase4 img {
     width: 500px;
   }
 }
 @media screen and (max-width: 640px) {
-  #descript2 .phase3 img, #descript2 .phase4 img {
+  #descript2 .phase3 img,
+  #descript2 .phase4 img {
     width: 294px;
   }
 }
