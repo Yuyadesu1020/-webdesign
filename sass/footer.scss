@@ -90,8 +90,12 @@ footer {
         margin-top: 12px;
         gap: 12px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        gap: 31px;
+        @include mixin.mobile{
+            gap: 11px;
+          }
         .mail {
           display: inline-block;
           border: solid 1px #1c1b1c;
@@ -108,8 +112,11 @@ footer {
         }
         }
         .icon {
-          font-size: 65px;
+          font-size: 51px;
           transition: scale 0.3s ease-in-out;
+          @include mixin.mobile{
+            font-size: 42px;
+          }
           &:hover {
             scale: 1.2;
           }
