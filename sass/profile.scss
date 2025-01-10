@@ -81,10 +81,10 @@ h1 {
     @include mixin.tablet {
       flex-direction: column;
     }
-    span{
-        display: block;
-        padding-left: 20px;
-    }
+    // span{
+    //     display: block;
+    //     padding-left: 20px;
+    // }
     .br{
         @include mixin.mobile{
             display: none;

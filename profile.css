@@ -358,6 +358,10 @@ img {
   width: 100%;
 }
 
+small {
+  color: #5e5e5e;
+}
+
 h1 {
   font-family: "Shippori Mincho", serif;
   font-weight: 900;
@@ -921,6 +925,10 @@ img {
   width: 100%;
 }
 
+small {
+  color: #5e5e5e;
+}
+
 h1 {
   font-family: "Shippori Mincho", serif;
   font-weight: 900;
@@ -1033,7 +1041,7 @@ h1 {
 }
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
@@ -1212,6 +1220,10 @@ section {
 
 img {
   width: 100%;
+}
+
+small {
+  color: #5e5e5e;
 }
 
 h1 {
@@ -1409,10 +1421,6 @@ h1 {
   #descript2 .phase4 {
     flex-direction: column;
   }
-}
-#descript2 .phase4 span {
-  display: block;
-  padding-left: 20px;
 }
 @media screen and (max-width: 640px) {
   #descript2 .phase4 .br {

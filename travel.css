@@ -358,6 +358,10 @@ img {
   width: 100%;
 }
 
+small {
+  color: #5e5e5e;
+}
+
 h1 {
   font-family: "Shippori Mincho", serif;
   font-weight: 900;
@@ -470,7 +474,7 @@ h1 {
 }
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
@@ -649,6 +653,10 @@ section {
 
 img {
   width: 100%;
+}
+
+small {
+  color: #5e5e5e;
 }
 
 h1 {
