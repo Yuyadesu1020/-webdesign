@@ -297,6 +297,9 @@
   @include mixin.tablet{
     width: 100%;
   }
+  @include mixin.mobile{
+    padding: 20px 0 40px 0;
+  }
   h2{
     padding-top: 0;
   }

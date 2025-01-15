@@ -361,7 +361,7 @@ section {
 }
 @media screen and (max-width: 640px) {
   section {
-    padding: 90px 0 40px 0;
+    padding: 20px 0;
   }
 }
 
@@ -658,7 +658,7 @@ section {
 }
 @media screen and (max-width: 640px) {
   section {
-    padding: 90px 0 40px 0;
+    padding: 20px 0;
   }
 }
 
@@ -790,6 +790,9 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 11px;
   }
+}
+.album div {
+  width: 200px;
 }
 .album li {
   position: relative;

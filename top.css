@@ -351,7 +351,7 @@ section {
 }
 @media screen and (max-width: 640px) {
   section {
-    padding: 90px 0 40px 0;
+    padding: 20px 0;
   }
 }
 
@@ -746,6 +746,11 @@ a {
 @media screen and (max-width: 1060px) {
   #profile {
     width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  #profile {
+    padding: 20px 0 40px 0;
   }
 }
 #profile h2 {
