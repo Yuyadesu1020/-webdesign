@@ -865,52 +865,52 @@ a {
 /* Lightbox のデータ（キャプションやボタン）を中央に配置 */
 .lb-dataContainer {
   position: fixed !important;
-  bottom: 10% !important;
+  top: auto !important;
+  bottom: 10% !important; /* 画像の下に配置 */
   left: 50% !important;
   transform: translateX(-50%) !important;
   text-align: center !important;
-  width: 65% !important;
+  width: 400px !important;
+  max-width: 90% !important; /* 画面サイズに応じて調整 */
 }
 @media screen and (max-width: 1060px) {
   .lb-dataContainer {
-    width: 95% !important;
+    bottom: 8% !important; /* タブレット時に微調整 */
+    max-width: 95% !important;
   }
 }
 @media screen and (max-width: 640px) {
   .lb-dataContainer {
-    bottom: 4% !important;
+    bottom: 13% !important; /* スマホ時に微調整 */
+    max-width: 80% !important;
   }
 }
 
 /* キャプション（タイトル）のスタイル */
 .lb-caption {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   text-align: center;
   max-width: 80vw;
   margin: 0 auto;
 }
 
-.lb-next, .lb-prev {
-  height: 50% !important;
-}
-
-/* ナビゲーションボタンの調整 */
+/* Lightbox ナビゲーションボタン */
 .lb-nav {
   position: fixed !important;
-  top: 50% !important;
+  bottom: 10% !important; /* 画面下部に配置 */
   left: 50% !important;
   width: 100vw !important;
-  transform: translate(-50%, -50%) !important;
+  transform: translateX(-50%) !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* 閉じるボタンの配置 */
+/* 閉じるボタンの調整 */
 .lb-close {
   position: fixed !important;
-  top: 5% !important;
+  top: 3% !important; /* 画面の上部に固定 */
   right: 5% !important;
   font-size: 2rem !important;
   color: white !important;
