@@ -843,11 +843,77 @@ a {
 }
 @media screen and (max-width: 1060px) {
   .gallery .album img {
-    width: 100%;
+    height: 394px;
   }
 }
 @media screen and (max-width: 640px) {
   .gallery .album img {
     height: 240px;
   }
+}
+
+/* Lightbox の画像を固定 */
+.lb-outerContainer, .lb-container {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+}
+
+/* Lightbox のデータ（キャプションやボタン）を中央に配置 */
+.lb-dataContainer {
+  position: fixed !important;
+  bottom: 10% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+  width: 65% !important;
+}
+@media screen and (max-width: 1060px) {
+  .lb-dataContainer {
+    width: 95% !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .lb-dataContainer {
+    bottom: 4% !important;
+  }
+}
+
+/* キャプション（タイトル）のスタイル */
+.lb-caption {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.lb-next, .lb-prev {
+  height: 50% !important;
+}
+
+/* ナビゲーションボタンの調整 */
+.lb-nav {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 100vw !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 閉じるボタンの配置 */
+.lb-close {
+  position: fixed !important;
+  top: 5% !important;
+  right: 5% !important;
+  font-size: 2rem !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer;
 }/*# sourceMappingURL=fashion.css.map */
