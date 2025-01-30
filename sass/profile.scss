@@ -25,9 +25,9 @@ h1 {
 }
 
 #profile {
+    padding: 80px 0;
     @include mixin.mobile{
         padding-top: 163px;
-        padding-bottom: 0;
     }
     .profile_box {
         div {

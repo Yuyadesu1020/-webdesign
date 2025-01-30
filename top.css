@@ -611,6 +611,14 @@ a {
     width: 100%;
   }
 }
+#volleyball h2 {
+  width: 942px;
+}
+@media screen and (max-width: 1060px) {
+  #volleyball h2 {
+    width: 100%;
+  }
+}
 #volleyball a {
   margin: 0 auto;
   display: flex;
@@ -682,6 +690,12 @@ a {
 }
 #travel h2 {
   padding-top: 0;
+  width: 942px;
+}
+@media screen and (max-width: 1060px) {
+  #travel h2 {
+    width: 100%;
+  }
 }
 #travel a {
   display: flex;
@@ -755,6 +769,12 @@ a {
 }
 #profile h2 {
   padding-top: 0;
+  width: 855px;
+}
+@media screen and (max-width: 1060px) {
+  #profile h2 {
+    width: 100%;
+  }
 }
 #profile .profile_box {
   display: flex;

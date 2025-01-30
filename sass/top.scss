@@ -188,6 +188,12 @@
   @include mixin.tablet{
       width: 100%;
   }
+  h2{
+    width: 942px;
+    @include mixin.tablet{
+      width: 100%;
+    }
+  }
   a {
     margin: 0 auto;
     @include mixin.middle_box();
@@ -240,6 +246,10 @@
   }
   h2{
     padding-top: 0;
+    width: 942px;
+    @include mixin.tablet{
+      width: 100%;
+    }
   }
   a {
     display: flex;
@@ -302,6 +312,10 @@
   }
   h2{
     padding-top: 0;
+    width: 855px;
+    @include mixin.tablet{
+      width: 100%;
+    }
   }
   .profile_box {
     @include mixin.middle_box();

@@ -46,7 +46,7 @@ h1 {
         h1 {
             width: 100%;
             text-align: left;
-            margin: 68px 0 0 0;
+            margin: 80px 0 0 0;
             font-size: 36px; 
             .br{
                 display: none;
@@ -55,7 +55,7 @@ h1 {
                 }
             }
             @include mixin.mobile{
-                font-size: 20px;
+                font-size: 22px;
                 margin: 40px auto;
             }
         }
